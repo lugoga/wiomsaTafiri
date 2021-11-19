@@ -1,3 +1,1 @@
-# wiomsaCapacityTafiri
-# wiomsaTafiri
 # wiomsaTafiri
