@@ -1,0 +1,13 @@
+# METHOD
+## Study Area
+
+This research was conducted in the territorial and deep waters of Tanzania sketched in figure \@ref(fig:pfz-map).The area gegraphically located between longitude 38.5$^\circ$E and 43.5$^\circ$E and latitude 11.2$^\circ$ S and 4$^\circ$ S (Figure \@ref(fig:pfz-map)).
+
+```{r pfz-map,fig.cap="Satellite derived Potential fishing zones in the territorial and exclusive economic zone of Tanzania", out.width="%75"}
+
+knitr::include_graphics("graphics/climatology_pfz_mar.pdf")
+
+```
+
+
+

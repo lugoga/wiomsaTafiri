@@ -1,0 +1,5 @@
+region,species,fishing_ground,counts,statistic,p.value,season
+Tanga,Bigeye,Mataani,18,18,2.2090496998585455e-5,NE
+Tanga,Bigeye,Kitungamwe,38,30.42105263157895,3.477337434535993e-8,NE
+Tanga,Bigeye,Chundo,2,2,0.1572992070502845,NE
+Tanga,Bigeye,Kitungamwe,7,NA,NA,SE

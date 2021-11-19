@@ -1,0 +1,23 @@
+"0","publications %>% 
+  # filter(is.na(title))
+  select(abstract) %>%
+  tidytext::unnest_tokens(input = abstract, output = word) %>% 
+  mutate(len = str_length(string = word))%>% 
+  filter(len >3) %>% 
+  select(word) %>% 
+  mutate(word = str_to_title(string = word), 
+         word = if_else(word == ""Machumu"", ""Kishe"", word)) %>% 
+  group_by(word) %>% 
+  count(sort = TRUE)%>%
+  ungroup() %>% 
+  top_n(200) %$% 
+  ggwordcloud(words = word, 
+            freq = n, 
+            colors = pal, 
+            max.words = 180, 
+            random.order = FALSE, 
+            min.freq = 3)+
+  ggthemes::theme_solarized_2()
+"
+"2","Selecting by n
+"

@@ -1,0 +1,1500 @@
+{
+    "sources": [
+        {
+            "author": [
+                {
+                    "family": "Holden",
+                    "given": "Michael John"
+                },
+                {
+                    "family": "Raitt",
+                    "given": "Douglas Ferrier Stewart"
+                },
+                {
+                    "literal": "others"
+                }
+            ],
+            "id": "holden",
+            "issued": {
+                "date-parts": [
+                    [
+                        1974
+                    ]
+                ]
+            },
+            "title": "Manual of fisheries science. Part 2-methods of resource investigation and their application",
+            "type": "article-journal"
+        },
+        {
+            "URL": "http://beta.smartcas.net",
+            "author": [
+                {
+                    "family": "Sailale",
+                    "given": "Innocent"
+                },
+                {
+                    "family": "Mpuruti",
+                    "given": "Hassan"
+                }
+            ],
+            "id": "ecas",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "note": "",
+            "title": "eCAS: Tanzania fisheries platform",
+            "title-short": "eCAS",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "UNEP"
+                }
+            ],
+            "genre": "book",
+            "id": "easternResources",
+            "issued": {
+                "date-parts": [
+                    [
+                        2001
+                    ]
+                ]
+            },
+            "publisher": "United Nations Environment Programme Nairobi",
+            "title": "Eastern africa atlas of coastal resources: tanzania",
+            "title-short": "Eastern africa atlas of coastal resources",
+            "type": "book"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=readr",
+            "author": [
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                },
+                {
+                    "family": "Hester",
+                    "given": "Jim"
+                }
+            ],
+            "id": "readr",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "note": "R package version 1.4.0",
+            "title": "Readr: Read rectangular text data",
+            "title-short": "Readr",
+            "type": "book"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=ncdf4",
+            "author": [
+                {
+                    "family": "Pierce",
+                    "given": "David"
+                }
+            ],
+            "id": "ncdf4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "note": "R package version 1.17",
+            "title": "ncdf4: Interface to unidata netCDF (version 4 or earlier) format data files",
+            "title-short": "ncdf4",
+            "type": "book"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=readxl",
+            "author": [
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                },
+                {
+                    "family": "Bryan",
+                    "given": "Jennifer"
+                }
+            ],
+            "id": "readxl",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "note": "R package version 1.3.1",
+            "title": "Readxl: Read excel files",
+            "title-short": "Readxl",
+            "type": "book"
+        },
+        {
+            "DOI": "10.32614/RJ-2018-009",
+            "URL": "https://doi.org/10.32614/RJ-2018-009",
+            "author": [
+                {
+                    "family": "Pebesma",
+                    "given": "Edzer"
+                }
+            ],
+            "container-title": "The R Journal",
+            "id": "sf",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "page": "439-446",
+            "title": "Simple Features for R: Standardized Support for Spatial Vector Data",
+            "type": "article-journal",
+            "volume": "10"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=dplyr",
+            "author": [
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                },
+                {
+                    "family": "François",
+                    "given": "Romain"
+                },
+                {
+                    "family": "Henry",
+                    "given": "Lionel"
+                },
+                {
+                    "family": "Müller",
+                    "given": "Kirill"
+                }
+            ],
+            "id": "dplyr",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "note": "R package version 1.0.5",
+            "title": "Dplyr: A grammar of data manipulation",
+            "title-short": "Dplyr",
+            "type": "book"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=tidyr",
+            "author": [
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                }
+            ],
+            "id": "tidyr",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "note": "R package version 1.1.3",
+            "title": "Tidyr: Tidy messy data",
+            "title-short": "Tidyr",
+            "type": "book"
+        },
+        {
+            "URL": "https://www.jstatsoft.org/v40/i03/",
+            "author": [
+                {
+                    "family": "Grolemund",
+                    "given": "Garrett"
+                },
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                }
+            ],
+            "container-title": "Journal of Statistical Software",
+            "id": "lubridate",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2011
+                    ]
+                ]
+            },
+            "page": "1-25",
+            "title": "Dates and times made easy with lubridate",
+            "type": "article-journal",
+            "volume": "40"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=kableExtra",
+            "author": [
+                {
+                    "family": "Zhu",
+                    "given": "Hao"
+                }
+            ],
+            "id": "kableextra",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "note": "R package version 1.3.4",
+            "title": "kableExtra: Construct complex table with ’kable’ and pipe syntax",
+            "title-short": "kableExtra",
+            "type": "book"
+        },
+        {
+            "URL": "http://www.crcpress.com/product/isbn/9781466561595",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                }
+            ],
+            "container-title": "Implementing reproducible computational research",
+            "editor": [
+                {
+                    "family": "Stodden",
+                    "given": "Victoria"
+                },
+                {
+                    "family": "Leisch",
+                    "given": "Friedrich"
+                },
+                {
+                    "family": "Peng",
+                    "given": "Roger D."
+                }
+            ],
+            "id": "knitr",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014
+                    ]
+                ]
+            },
+            "note": "ISBN 978-1466561595",
+            "publisher": "Chapman; Hall/CRC",
+            "title": "Knitr: A comprehensive tool for reproducible research in R",
+            "title-short": "Knitr",
+            "type": "chapter"
+        },
+        {
+            "DOI": "10.5281/zenodo.2593516",
+            "URL": "https://github.com/eliocamp/metR",
+            "author": [
+                {
+                    "family": "Campitelli",
+                    "given": "Elio"
+                }
+            ],
+            "id": "metr",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "note": "R package version 0.9.2",
+            "title": "metR: Tools for easier analysis of meteorological fields",
+            "title-short": "metR",
+            "type": "book"
+        },
+        {
+            "ISBN": "978-3-319-24277-4",
+            "URL": "https://ggplot2.tidyverse.org",
+            "author": [
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                }
+            ],
+            "id": "ggplot",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "publisher": "Springer-Verlag New York",
+            "title": "ggplot2: Elegant graphics for data analysis",
+            "title-short": "ggplot2",
+            "type": "book"
+        },
+        {
+            "URL": "https://bookdown.org/yihui/bookdown",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                }
+            ],
+            "id": "bookdown",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "note": "ISBN 978-1138700109",
+            "publisher": "Chapman; Hall/CRC",
+            "publisher-place": "Boca Raton, Florida",
+            "title": "Bookdown: Authoring books and technical documents with R markdown",
+            "title-short": "Bookdown",
+            "type": "book"
+        },
+        {
+            "URL": "https://bookdown.org/yihui/rmarkdown-cookbook",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                },
+                {
+                    "family": "Dervieux",
+                    "given": "Christophe"
+                },
+                {
+                    "family": "Riederer",
+                    "given": "Emily"
+                }
+            ],
+            "id": "rmarkdown",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "note": "ISBN 9780367563837",
+            "publisher": "Chapman; Hall/CRC",
+            "publisher-place": "Boca Raton, Florida",
+            "title": "R markdown cookbook",
+            "type": "book"
+        },
+        {
+            "ISBN": "978-1-4614-8455-4",
+            "URL": "https://www.springer.com",
+            "author": [
+                {
+                    "family": "Millard",
+                    "given": "Steven P."
+                }
+            ],
+            "id": "envstats",
+            "issued": {
+                "date-parts": [
+                    [
+                        2013
+                    ]
+                ]
+            },
+            "publisher": "Springer",
+            "publisher-place": "New York",
+            "title": "EnvStats: An r package for environmental statistics",
+            "title-short": "EnvStats",
+            "type": "book"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=ggpubr",
+            "author": [
+                {
+                    "family": "Kassambara",
+                    "given": "Alboukadel"
+                }
+            ],
+            "id": "ggpubr",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "note": "R package version 0.4.0",
+            "title": "Ggpubr: ’ggplot2’ based publication ready plots",
+            "title-short": "Ggpubr",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Tumbo",
+                    "given": "Madaka"
+                },
+                {
+                    "family": "Mangora",
+                    "given": "Mwita M"
+                },
+                {
+                    "family": "Pauline",
+                    "given": "Noah M"
+                },
+                {
+                    "family": "Kuguru",
+                    "given": "Baraka"
+                }
+            ],
+            "container-title": "Dar es Salaam: WWF Tanzania Country Office",
+            "id": "tumbo2015review",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015
+                    ]
+                ]
+            },
+            "title": "Review of literature for a climate vulnerability assessment in the RUMAKI seascape, tanzania",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Oglethorpe",
+                    "given": "Judy"
+                }
+            ],
+            "id": "oglethorpeeastern",
+            "title": "EASTERN AFRICAN MARINE ECOREGION",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Semba",
+                    "given": "Masumbuko"
+                },
+                {
+                    "family": "Lumpkin",
+                    "given": "Rick"
+                },
+                {
+                    "family": "Kimirei",
+                    "given": "Ismael"
+                },
+                {
+                    "family": "Shaghude",
+                    "given": "Yohanna"
+                },
+                {
+                    "family": "Nyandwi",
+                    "given": "Ntahondi"
+                }
+            ],
+            "container-title": "PloS one",
+            "id": "semba2019seasonal",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "page": "e0210303",
+            "publisher": "Public Library of Science San Francisco, CA USA",
+            "title": "Seasonal and spatial variation of surface current in the pemba channel, tanzania",
+            "type": "article-journal",
+            "volume": "14"
+        },
+        {
+            "author": [
+                {
+                    "family": "Richmond",
+                    "given": "Matthew D"
+                }
+            ],
+            "id": "richmond1995field",
+            "issued": {
+                "date-parts": [
+                    [
+                        1995
+                    ]
+                ]
+            },
+            "publisher": "JSTOR",
+            "title": "A field guide to the seashores of eastern africa",
+            "type": ""
+        },
+        {
+            "URL": "http://beta.smartcas.net",
+            "author": [
+                {
+                    "family": "Sailale",
+                    "given": "Innocent"
+                },
+                {
+                    "family": "Mpuruti",
+                    "given": "Hassan"
+                }
+            ],
+            "id": "ecas",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "note": "",
+            "title": "eCAS: Tanzania fisheries platform",
+            "title-short": "eCAS",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Jiddawi",
+                    "given": "Narriman S"
+                },
+                {
+                    "family": "Öhman",
+                    "given": "Marcus C"
+                }
+            ],
+            "container-title": "Ambio: a journal of the Human Environment",
+            "id": "jiddawi2002marine",
+            "issue": "7",
+            "issued": {
+                "date-parts": [
+                    [
+                        2002
+                    ]
+                ]
+            },
+            "page": "518-527",
+            "publisher": "BioOne",
+            "title": "Marine fisheries in tanzania",
+            "type": "article-journal",
+            "volume": "31"
+        },
+        {
+            "author": [
+                {
+                    "family": "Silas",
+                    "given": "Mathew Ogalo"
+                }
+            ],
+            "genre": "Master’s thesis",
+            "id": "silas2011review",
+            "issued": {
+                "date-parts": [
+                    [
+                        2011
+                    ]
+                ]
+            },
+            "publisher": "The University of Bergen",
+            "title": "Review of the tanzanian prawn fishery",
+            "type": "thesis"
+        },
+        {
+            "URL": "https://www.R-project.org/",
+            "author": [
+                {
+                    "literal": "R Core Team"
+                }
+            ],
+            "id": "r-base",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "publisher": "R Foundation for Statistical Computing",
+            "publisher-place": "Vienna, Austria",
+            "title": "R: A language and environment for statistical computing",
+            "title-short": "R",
+            "type": "book"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=LBSPR",
+            "author": [
+                {
+                    "family": "Hordyk",
+                    "given": "Adrian"
+                }
+            ],
+            "id": "lbspr",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "note": "R package version 0.1.5",
+            "title": "LBSPR: Length-based spawning potential ratio",
+            "title-short": "LBSPR",
+            "type": "book"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=patchwork",
+            "author": [
+                {
+                    "family": "Pedersen",
+                    "given": "Thomas Lin"
+                }
+            ],
+            "id": "patchwork",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "note": "R package version 1.1.1",
+            "title": "Patchwork: The composer of plots",
+            "title-short": "Patchwork",
+            "type": "book"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=sizeMat",
+            "author": [
+                {
+                    "family": "Torrejon-Magallanes",
+                    "given": "Josymar"
+                }
+            ],
+            "id": "sizemat",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "note": "R package version 1.1.2",
+            "title": "sizeMat: Estimate size at sexual maturity",
+            "title-short": "sizeMat",
+            "type": "book"
+        },
+        {
+            "DOI": "10.1111/2041-210X.12791",
+            "ISSN": "2041-210X",
+            "URL": "http://dx.doi.org/10.1111/2041-210X.12791",
+            "author": [
+                {
+                    "family": "Mildenberger",
+                    "given": "Tobias K."
+                },
+                {
+                    "family": "Taylor",
+                    "given": "Marc H."
+                },
+                {
+                    "family": "Wolff",
+                    "given": "Matthias"
+                }
+            ],
+            "container-title": "Methods in Ecology and Evolution",
+            "id": "tropfish",
+            "issue": "11",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017
+                    ]
+                ]
+            },
+            "page": "1520-1527",
+            "title": "TropFishR: An r package for fisheries analysis with length-frequency data",
+            "title-short": "TropFishR",
+            "type": "article-journal",
+            "volume": "8"
+        },
+        {
+            "DOI": "10.21105/joss.01686",
+            "author": [
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                },
+                {
+                    "family": "Averick",
+                    "given": "Mara"
+                },
+                {
+                    "family": "Bryan",
+                    "given": "Jennifer"
+                },
+                {
+                    "family": "Chang",
+                    "given": "Winston"
+                },
+                {
+                    "family": "McGowan",
+                    "given": "Lucy D’Agostino"
+                },
+                {
+                    "family": "François",
+                    "given": "Romain"
+                },
+                {
+                    "family": "Grolemund",
+                    "given": "Garrett"
+                },
+                {
+                    "family": "Hayes",
+                    "given": "Alex"
+                },
+                {
+                    "family": "Henry",
+                    "given": "Lionel"
+                },
+                {
+                    "family": "Hester",
+                    "given": "Jim"
+                },
+                {
+                    "family": "Kuhn",
+                    "given": "Max"
+                },
+                {
+                    "family": "Pedersen",
+                    "given": "Thomas Lin"
+                },
+                {
+                    "family": "Miller",
+                    "given": "Evan"
+                },
+                {
+                    "family": "Bache",
+                    "given": "Stephan Milton"
+                },
+                {
+                    "family": "Müller",
+                    "given": "Kirill"
+                },
+                {
+                    "family": "Ooms",
+                    "given": "Jeroen"
+                },
+                {
+                    "family": "Robinson",
+                    "given": "David"
+                },
+                {
+                    "family": "Seidel",
+                    "given": "Dana Paige"
+                },
+                {
+                    "family": "Spinu",
+                    "given": "Vitalie"
+                },
+                {
+                    "family": "Takahashi",
+                    "given": "Kohske"
+                },
+                {
+                    "family": "Vaughan",
+                    "given": "Davis"
+                },
+                {
+                    "family": "Wilke",
+                    "given": "Claus"
+                },
+                {
+                    "family": "Woo",
+                    "given": "Kara"
+                },
+                {
+                    "family": "Yutani",
+                    "given": "Hiroaki"
+                }
+            ],
+            "container-title": "Journal of Open Source Software",
+            "id": "tidyverse",
+            "issue": "43",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "page": "1686",
+            "title": "Welcome to the tidyverse",
+            "type": "article-journal",
+            "volume": "4"
+        },
+        {
+            "author": [
+                {
+                    "family": "Semba",
+                    "given": "Masumbuko"
+                },
+                {
+                    "family": "Peter",
+                    "given": "Nyamisi"
+                }
+            ],
+            "id": "wior",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "note": "R package version 0.0.0.1",
+            "title": "Wior: Easy tidy and process oceanographic data",
+            "title-short": "Wior",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Zudaire",
+                    "given": "Iker"
+                },
+                {
+                    "family": "Murua",
+                    "given": "Hilario"
+                },
+                {
+                    "family": "Grande",
+                    "given": "Maitane"
+                },
+                {
+                    "family": "Bodin",
+                    "given": "Nathalie"
+                }
+            ],
+            "id": "zudaire",
+            "issued": {
+                "date-parts": [
+                    [
+                        2013
+                    ]
+                ]
+            },
+            "publisher": "NATL MARINE FISHERIES SERVICE SCIENTIFIC PUBL OFFICE",
+            "title": "Reproductive potential of yellowfin tuna (thunnus albacares) in the western indian ocean",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Zudaire",
+                    "given": "I"
+                },
+                {
+                    "family": "Chassot",
+                    "given": "Emmanuel"
+                },
+                {
+                    "family": "Murua",
+                    "given": "H"
+                },
+                {
+                    "family": "Dhurmeea",
+                    "given": "Z"
+                },
+                {
+                    "family": "Cedras",
+                    "given": "M"
+                },
+                {
+                    "family": "Bodin",
+                    "given": "Nathalie"
+                }
+            ],
+            "id": "zudaire2016",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "title": "Sex-ratio, size at maturity, spawning period and fecundity of bigeye tuna (thunnus obesus) in the western indian ocean",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Widodo",
+                    "given": "Agustinus Anung"
+                },
+                {
+                    "family": "Satria",
+                    "given": "Fayakun"
+                },
+                {
+                    "family": "Sadiyah",
+                    "given": "L"
+                },
+                {
+                    "family": "Riyanto",
+                    "given": "Joko"
+                }
+            ],
+            "container-title": "1st Session of the Working Party on Neritic Tuna",
+            "id": "widodo",
+            "issued": {
+                "date-parts": [
+                    [
+                        2011
+                    ]
+                ]
+            },
+            "title": "Neritic tuna species caught drifting gillnet in indian ocean base in cilacap indonesia",
+            "type": "article-journal",
+            "volume": "22"
+        },
+        {
+            "author": [
+                {
+                    "family": "Chaidee",
+                    "given": "Phithak"
+                },
+                {
+                    "family": "Darumas",
+                    "given": "Narupon"
+                },
+                {
+                    "family": "Chamasont",
+                    "given": "Opas"
+                },
+                {
+                    "family": "Sada",
+                    "given": "Md Nasiruddin"
+                },
+                {
+                    "family": "Jayasinghe",
+                    "given": "Rankiri PP Krishantha"
+                },
+                {
+                    "family": "Chinthaka",
+                    "given": "Kattawatta Siriwarnage Dharana"
+                },
+                {
+                    "family": "Sein",
+                    "given": "U Aung Win"
+                },
+                {
+                    "family": "Nalla",
+                    "given": "Jagannath"
+                },
+                {
+                    "family": "Thapanand-Chaidee",
+                    "given": "Thanitha"
+                }
+            ],
+            "container-title": "The Ecosystem-Based Fishery Management in the Bay of Bengal",
+            "id": "chaidee",
+            "issued": {
+                "date-parts": [
+                    [
+                        2007
+                    ]
+                ]
+            },
+            "page": "1-18",
+            "title": "Marine resource surveys by drift gill net in the bay of bengal",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Wekesa",
+                    "given": "Peter Nyongesa"
+                }
+            ],
+            "container-title": "Ministry of Agriculture Livestock and Fisheries—State Department of Fisheries",
+            "id": "wekesa",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014
+                    ]
+                ]
+            },
+            "title": "Kenya national report to the scientific committee of the indian ocean tuna commission, 2014",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Igulu",
+                    "given": "Mathias"
+                },
+                {
+                    "family": "El Kharousy",
+                    "given": "Zahor Mohamed"
+                }
+            ],
+            "container-title": "Tanzania Fisheries Research Institute and Tanzania Deep Sea Fishing Authority",
+            "id": "igulu",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015
+                    ]
+                ]
+            },
+            "title": "Tanzania national report to the scientific committee of the indian ocean tuna commission, 2015",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Kimakwa",
+                    "given": "Edward"
+                },
+                {
+                    "family": "Ntiba",
+                    "given": "Micheni"
+                },
+                {
+                    "family": "Muthumbi",
+                    "given": "Agnes"
+                }
+            ],
+            "container-title": "Western Indian Ocean Journal of Marine Science",
+            "id": "kimakwa",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "page": "95-109",
+            "title": "Population characteristics and exploitation of yellowfin tuna (thunnus albacares bonnaterre, 1788) in the coastal waters of kenya",
+            "type": "article-journal",
+            "volume": "20"
+        },
+        {
+            "DOI": "10.1093/icesjms/fsu004",
+            "ISSN": "1054-3139",
+            "URL": "https://doi.org/10.1093/icesjms/fsu004",
+            "author": [
+                {
+                    "family": "Hordyk",
+                    "given": "Adrian"
+                },
+                {
+                    "family": "Ono",
+                    "given": "Kotaro"
+                },
+                {
+                    "family": "Valencia",
+                    "given": "Sarah"
+                },
+                {
+                    "family": "Loneragan",
+                    "given": "Neil"
+                },
+                {
+                    "family": "Prince",
+                    "given": "Jeremy"
+                }
+            ],
+            "container-title": "ICES Journal of Marine Science",
+            "genre": "Journal Article",
+            "id": "hordyk",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014
+                    ]
+                ]
+            },
+            "page": "217-231",
+            "title": "A novel length-based empirical estimation method of spawning potential ratio (SPR), and tests of its performance, for small-scale, data-poor fisheries",
+            "type": "article-journal",
+            "volume": "72"
+        },
+        {
+            "author": [
+                {
+                    "family": "Ceo",
+                    "given": "Marika"
+                },
+                {
+                    "family": "Fagnani",
+                    "given": "Sarah"
+                },
+                {
+                    "family": "Swan",
+                    "given": "Judith"
+                },
+                {
+                    "family": "Tamada",
+                    "given": "Kumiko"
+                },
+                {
+                    "family": "Watanabe",
+                    "given": "Hiromoto"
+                }
+            ],
+            "container-title": "FAO Fisheries and Aquaculture Circular",
+            "id": "ceo2012performance",
+            "issue": "C1072",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012
+                    ]
+                ]
+            },
+            "page": "I",
+            "publisher": "Food; Agriculture Organization of the United Nations",
+            "title": "PERFORMANCE REVIEWS BY REGIONAL FISHERY BODIES: INTRODUCTION, SUMMARIES, SYNTHESIS AND BEST PRACTICES volume i: CCAMLR, CCSBT, ICCAT, IOTC, NAFO, NASCO, NEAFC",
+            "title-short": "PERFORMANCE REVIEWS BY REGIONAL FISHERY BODIES",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "URT"
+                }
+            ],
+            "id": "dsfa",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "publisher": "United Republic of Tanzania",
+            "title": "The deep sea fisheries management and development act",
+            "type": ""
+        },
+        {
+            "author": [
+                {
+                    "family": "URT"
+                }
+            ],
+            "id": "tfa",
+            "issued": {
+                "date-parts": [
+                    [
+                        2003
+                    ]
+                ]
+            },
+            "publisher": "United Republic of Tanzania",
+            "title": "The fisheries act",
+            "type": ""
+        },
+        {
+            "author": [
+                {
+                    "family": "Majkowski",
+                    "given": "Jacek"
+                }
+            ],
+            "id": "majkowski",
+            "issued": {
+                "date-parts": [
+                    [
+                        2007
+                    ]
+                ]
+            },
+            "publisher": "Food & Agriculture Org.",
+            "title": "Global fishery resources of tuna and tuna-like species",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Hallier",
+                    "given": "Jean-Pierre"
+                },
+                {
+                    "family": "Million",
+                    "given": "Julien"
+                }
+            ],
+            "container-title": "IOTC Working Party on Tropical Tunas. IOTC-2009-WPTT-24",
+            "id": "hallier",
+            "issued": {
+                "date-parts": [
+                    [
+                        2009
+                    ]
+                ]
+            },
+            "title": "The contribution of the regional tuna tagging project–indian ocean to IOTC stock assessment",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Kadagi",
+                    "given": "Nelly Isigi"
+                },
+                {
+                    "family": "Wambiji",
+                    "given": "Nina"
+                },
+                {
+                    "family": "Fennessy",
+                    "given": "Sean Thomas"
+                },
+                {
+                    "family": "Allen",
+                    "given": "Micheal S"
+                },
+                {
+                    "family": "Ahrens",
+                    "given": "Robert NM"
+                }
+            ],
+            "container-title": "Marine Policy",
+            "id": "kadagi2021challenges",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "page": "104351",
+            "publisher": "Elsevier",
+            "title": "Challenges and opportunities for sustainable development and management of marine recreational and sport fisheries in the western indian ocean",
+            "type": "article-journal",
+            "volume": "124"
+        },
+        {
+            "author": [
+                {
+                    "family": "Marsac",
+                    "given": "Francis"
+                },
+                {
+                    "family": "Fonteneau",
+                    "given": "Alain"
+                },
+                {
+                    "family": "Lucas",
+                    "given": "Juliette"
+                },
+                {
+                    "family": "Bez",
+                    "given": "Jose-Carlos"
+                },
+                {
+                    "family": "Floch",
+                    "given": "Laurent"
+                }
+            ],
+            "container-title": "A paper submitted to the 19th meeting of the IOTC working party on tropical tunas, mahe, seychelles",
+            "id": "marsac",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017
+                    ]
+                ]
+            },
+            "title": "Data-derived fishery and stocks status indicators for skipjack tuna in the indian ocean",
+            "type": "paper-conference"
+        },
+        {
+            "author": [
+                {
+                    "family": "Telesetsky",
+                    "given": "Anastasia"
+                }
+            ],
+            "container-title": "Global commons and the law of the sea",
+            "id": "telesetsky2018international",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "page": "240-256",
+            "publisher": "Brill Nijhoff",
+            "title": "The international seafood sustainability foundation and high seas fisheries ConservationThe potential of private governance for managing public resources in the global commons",
+            "type": "chapter"
+        },
+        {
+            "URL": "https://doi.org/10.1111/j.1095-8649.2012.03464.x",
+            "author": [
+                {
+                    "family": "Boettiger",
+                    "given": "Carl"
+                },
+                {
+                    "family": "Temple Lang",
+                    "given": "Duncan"
+                },
+                {
+                    "family": "Wainwright",
+                    "given": "Peter"
+                }
+            ],
+            "container-title": "Journal of Fish Biology",
+            "id": "rfishbase",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012,
+                        11
+                    ]
+                ]
+            },
+            "publisher": "Wiley-Blackwell",
+            "title": "Rfishbase: Exploring, manipulating and visualizing FishBase data from r",
+            "title-short": "Rfishbase",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "literal": "Safina C."
+                }
+            ],
+            "id": "endangeredSwo",
+            "issued": {
+                "date-parts": [
+                    [
+                        1996
+                    ]
+                ]
+            },
+            "note": "[Online; accessed 29-September-2021]",
+            "publisher": ". https://dx.doi.org/10.2305/IUCN.UK.1996.RLTS.T23149A9423680.en",
+            "title": "*xiphias gladius* (north atlantic stock). The IUCN red list of threatened species Wikipedia, the free encyclopedia",
+            "type": ""
+        },
+        {
+            "author": [
+                {
+                    "literal": "Collette Brandock"
+                }
+            ],
+            "id": "endangeredyft",
+            "issued": {
+                "date-parts": [
+                    [
+                        2011
+                    ]
+                ]
+            },
+            "note": "[Online; accessed 29-September-2021]",
+            "publisher": ". https://dx.doi.org/10.2305/IUCN.UK.2011-2.RLTS.T21857A9327139.en",
+            "title": "*thunnus albacares*. The IUCN red list of threatened species 2011 Wikipedia, the free encyclopedia",
+            "type": ""
+        },
+        {
+            "author": [
+                {
+                    "family": "Shaghude",
+                    "given": "Yohana"
+                },
+                {
+                    "family": "Muhando",
+                    "given": "Christopher"
+                },
+                {
+                    "family": "Nyandwi",
+                    "given": "Ntahondi"
+                },
+                {
+                    "family": "Kyewalyanga",
+                    "given": "Margareth"
+                },
+                {
+                    "family": "Semba",
+                    "given": "Masumbuko"
+                },
+                {
+                    "family": "Kizenga",
+                    "given": "Helen"
+                },
+                {
+                    "family": "Kuguru",
+                    "given": "Baraka"
+                },
+                {
+                    "family": "Ussi",
+                    "given": "Ally"
+                }
+            ],
+            "id": "shaghude",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "publisher": "Deep Sea Fishing Authority",
+            "title": "Oceanographic factors influencing tuna and tuna-like species in the tanzanian exclusive economic zone, territorial seas and internal waters",
+            "type": ""
+        },
+        {
+            "author": [
+                {
+                    "family": "Techera",
+                    "given": "Erika"
+                },
+                {
+                    "family": "Hassan",
+                    "given": "Abdi Fatah"
+                }
+            ],
+            "container-title": "The blue economy in sub-saharan africa",
+            "id": "techera2021fisheries",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "page": "49-66",
+            "publisher": "Routledge",
+            "title": "Fisheries and aquaculture in the western indian ocean states",
+            "type": "chapter"
+        }
+    ],
+    "project_biblios": [
+        "ref.bib"
+    ]
+}

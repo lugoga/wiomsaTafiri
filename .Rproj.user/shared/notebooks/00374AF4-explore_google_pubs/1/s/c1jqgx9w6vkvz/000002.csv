@@ -1,0 +1,5 @@
+"0","pubs.df = all.pubs %>% "
+"0","  bind_rows() %>% "
+"0","  janitor::clean_names() %>% "
+"0","  # glimpse()"
+"0","  select(authors, title, year, publisher, type, abstract)"

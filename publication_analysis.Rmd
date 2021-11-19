@@ -1,0 +1,299 @@
+---
+title: "publications analysis"
+author: "Masumbuko Semba"
+date: "8/23/2021"
+output: 
+    bookdown::pdf_document2:
+      latex_engine: xelatex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, comment = FALSE, message = FALSE)
+```
+
+```{r}
+require(ggwordcloud)
+require(magrittr)
+require(tidyverse)
+require(tidytext)
+require(wordcloud)
+require(RColorBrewer)
+
+pal <- brewer.pal(8,"Dark2")
+```
+
+
+# Publications
+
+```{r}
+publications = read_csv("tafiri_publication/TAFIRI Library.csv") %>% 
+  select(authors:journal)
+
+```
+
+
+```{r contrib, fig.width=7, fig.height=7,fig.cap="Contribution of authors in publications"}
+
+publications %>% 
+  select(authors) %>% 
+  tidytext::unnest_tokens(input = authors, output = word) %>% 
+  mutate(len = str_length(string = word)) %>% 
+  filter(len >3) %>% 
+  select(word) %>% 
+  mutate(word = str_to_title(string = word), 
+         word = if_else(word == "Machumu", "Kishe", word)) %>% 
+  group_by(word) %>% 
+  count(sort = TRUE)%>%
+  ungroup() %>% 
+  top_n(200) %$% 
+  ggwordcloud(words = word, 
+            freq = n, 
+            colors = pal, 
+            max.words = 180, 
+            random.order = FALSE, 
+            min.freq = 3)+
+  ggthemes::theme_solarized_2()
+
+# ggsave("graphics/publication_rush.pdf", width = 7, height = 7)
+```
+
+
+```{r first, fig.width=7, fig.height=7,fig.cap="Contribution of authors as first author in publications"}
+publications %>% 
+  separate(col = authors, into = c("authors", NA), sep = " ") %>% 
+  select(authors) %>% 
+  tidytext::unnest_tokens(input = authors, output = word) %>% 
+  mutate(len = str_length(string = word)) %>% 
+  filter(len >3) %>% 
+  select(word) %>% 
+  mutate(word = str_to_title(string = word), 
+         word = if_else(word == "Machumu", "Kishe", word)) %>% 
+  group_by(word) %>% 
+  count(sort = TRUE)%>%
+  ungroup() %>% 
+  top_n(200) %$% 
+  ggwordcloud(words = word, 
+            freq = n, 
+            colors = pal, 
+            max.words = 180, 
+            random.order = FALSE, 
+            min.freq = 1)+
+  ggthemes::theme_solarized_2()
+ 
+```
+
+
+
+
+
+```{r, eval=FALSE}
+# Deep sea
+
+texta = pdftools::pdf_data("d:/semba/dsfa_fumba/project reports/Complete DMG Tuna Report.pdf" )
+
+texta[c(18:80)] %>% 
+  bind_rows() %>% 
+  select(word = text) %>% 
+  mutate(word = str_to_title(word),
+         word_length = str_length(word)) %>% 
+  filter(word_length >2 & !word %in% c("Year", "Table", "2020", "This", "What", "With", "2017", "2018",  "And", "The", "For", "Are", "From", "Have", "(Table", "Has", "Who", "Not", "Was", "Most", "Your", "Any")) %>% 
+  anti_join(get_stopwords())%>% 
+  group_by(word) %>% 
+  count(sort = TRUE) %>% 
+  ungroup() %$% 
+  wordcloud(words = word,freq = n, max.words = 120, random.order = F, min.freq = 10, colors = brewer.pal(n = 8, name = "Accent"))
+
+```
+\newpage
+
+## Google scholar publications
+
+```{r}
+require(scholar)
+```
+
+```{r}
+
+tafiri = data.frame(
+author = c("Masumbuko Semba", "Ismael A. Kimirei", "Shigalla Mahongo", "Mary Alphonce Kishe", "Emmanuel A. Sweke", "Baraka Kuguru", "Deogratias Mulokozi","Rushingisha George"),
+gs.id = c("a0o574AAAAAJ","8NWslCkAAAAJ", "89jrgU8AAAAJ", "mOGizdwAAAAJ", "lAUQowgAAAAJ", "6TzNkHEAAAAJ", "aq_GimkAAAAJ", "aLpKvUQAAAAJ")
+)
+
+
+```
+
+## Pull publications
+
+```{r}
+set.seed(2145)
+
+kim.pub = scholar::get_publications(id = tafiri$gs.id[2])
+
+kim.pub %>% 
+  sample_n(size = 30)%>% 
+  select(author:year) %>% 
+  kableExtra::kable(format = "latex", booktab = TRUE, caption = "Articles by	IA Kimirei") %>% 
+  kableExtra::kable_styling(latex_options = "hold_position", font_size = 10) %>% 
+  kableExtra::landscape() 
+```
+
+\newpage
+## Pull citations
+
+```{r, fig.cap="Kimirei citation over a period"}
+kim.cite = scholar::get_citation_history(id = tafiri$gs.id[2])
+
+kim.cite %>% 
+  ggplot(aes(x = year, y = cites))+
+  geom_line()+
+  geom_point() +
+  geom_hline(yintercept = 100, color = "red", linetype = 3)+
+  scale_x_continuous(breaks = seq(2004,2021,2))+
+  scale_y_continuous(breaks = seq(10,200,20), name = "Citations")+
+  ggthemes::theme_solarized_2()+
+  theme(axis.title.x = element_blank())
+
+```
+
+\newpage
+
+## Compare scholars
+
+```{r, fig.cap="Authors and their cumulative citations"}
+cs = scholar::compare_scholars(ids = tafiri$gs.id[-1])
+
+cs %>% 
+  ggplot(aes(x = year, y = total, color = name, shape = name))+
+  geom_line() + 
+  geom_point()+
+  # facet_wrap(~name)+
+  scale_x_continuous(breaks = seq(1990,2025,4))+
+  geom_hline(yintercept = 50, linetype = 3, color = "red")+
+  ggthemes::theme_solarized_2()+
+  theme(axis.title.x = element_blank(), legend.position = c(.2,.8))+
+  ggsci::scale_color_d3(name = "Author")+
+  scale_shape(name = "Author")
+  
+
+```
+\newpage
+```{r, fig.cap="Cumulative number of citations by author"}
+
+cs %>% 
+  filter(name %in% c("Ismael A. Kimirei", "Mary Alphonce Kishe")) %>% 
+  group_by(name) %>% 
+  mutate(cumulative_cites = cumsum(cites)) %>% 
+  ggplot(aes(x = year, y = cumulative_cites, color = name, shape = name))+
+  geom_line() + 
+  geom_point(size = 2)+
+  # facet_wrap(~name, scales = "free_y")+
+  scale_x_continuous(breaks = seq(2000,2025,4))+
+  geom_hline(yintercept = 500, linetype = 3, color = "red")+
+  ggthemes::theme_solarized_2()+
+  theme(axis.title.x = element_blank(), legend.position = c(.2,.8))+
+  ggsci::scale_color_d3(name = "Author")+
+  scale_shape(name = "Author")
+  
+  
+```
+
+\newpage
+## Impact factor
+
+```{r}
+
+if.kim = list()
+
+for (i in 1:nrow(kim.pub)){
+
+if.kim[[i]] = scholar::get_impactfactor(journals = kim.pub$journal[i])
+
+}
+
+if.kim %>% 
+  bind_rows() %>% 
+  drop_na() %>% 
+  arrange(desc(ImpactFactor)) %>% 
+  distinct(.keep_all = TRUE) %>% 
+  kableExtra::kable(format = "latex", booktab = TRUE, caption = "Impact factor of journal 	IA Kimirei published") %>% 
+  kableExtra::kable_styling(latex_options = "hold_position", font_size = 10)
+
+```
+
+\newpage
+
+## Profile
+
+```{r}
+profile = scholar::get_profile(id = tafiri$gs.id[2])
+
+as.data.frame(do.call(cbind, profile)) %>% 
+  select(-c(i10_index,fields, id, affiliation))%>% 
+  kableExtra::kable(format = "latex", booktab = TRUE, caption = "Google Scholar Profile of	IA Kimirei") %>% 
+  kableExtra::kable_styling(latex_options = "hold_position", font_size = 10)
+
+```
+
+\newpage
+## Co-authors
+
+```{r, dev="pdf", fig.cap="The network coauthorship of Kimirei"}
+
+ca = scholar::get_coauthors(id = tafiri$gs.id[2], n_coauthors = 10)
+
+ca %>% 
+  scholar::plot_coauthors(size_labels = 3)+
+  ggthemes::theme_solarized_2()+
+  theme()
+```
+
+\newpage
+
+## h-index
+The h-index is an author-level metric that measures both the productivity and citation impact of the publications, initially used for an individual scientist or scholar.
+
+```{r, fig.cap="The h-index of authors at TAFIRI"}
+
+h_index = list()
+
+for (j in 2:nrow(tafiri)){
+
+h_index[[j]] = scholar::predict_h_index(id = tafiri$gs.id[j]) %>% 
+  mutate(name = tafiri$author[j])
+
+}
+
+h_index %>% 
+  bind_rows() %>% 
+  ggplot(aes(x = years_ahead, y = h_index, color = name))+
+  geom_line()+
+  geom_point()+
+  scale_x_continuous(breaks = 0:10, labels = 2011:2021)+
+  scale_y_continuous(name = "h-indes", breaks = scales::breaks_pretty(n = 8))+
+  ggthemes::theme_solarized_2()+
+  theme(axis.title.x = element_blank(), legend.position = c(.15,.72))+
+  ggsci::scale_color_d3(name = "Author")+
+  scale_shape(name = "Author")
+  
+```
+
+
+```{r, eval=FALSE}
+
+## get author id and plot the h-index
+
+gsid = scholar::get_scholar_id(last_name = "Jackson", first_name = "Justo")
+
+scholar::get_publications(id = gsid)
+
+scholar::predict_h_index(id = gsid) %>% 
+  ggplot(aes(x = years_ahead, y = h_index))+
+  geom_line()+
+  geom_point()+
+  scale_x_continuous(breaks = 0:10, labels = 2011:2021)
+
+```
+
+
+
+

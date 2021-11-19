@@ -1,0 +1,39 @@
+# Research Staff at the Institute {#staff}
+
+## Introduction
+In Chapter \@ref(govern), the focus was on governance and management issues in university institutions. In this chapter, the focus is on the number and qualifications (or highest level of education attained) of academic staff in the reported institutions.
+
+## RESOURCES FOR IMPLEMENTATION
+Effective implementation of the Research Agenda will require human and non-human resources (physical and finance) at national and international levels. In this case, research institutions are obliged to each work closely and where necessary support each other technically in order to fill the existing technical gaps among them. The Ministry of Livestock and Fisheries (Fisheries Sector) in collaboration with research Institutions and other related stakeholders, establish a research committee that will act as hub in foreseeing the implementation of the Research Agenda. 
+
+The role of the Committee will be to foresee all research proposals and selecting amongst them a well developed and competitive researches before submission to friends of fisheries such as such as FAO, EU, WIOMSA, WWF, AU –IBAR, for funding. Also, as a motivation mechanism, the Ministry of Livestock and Fisheries (Fisheries Sector) will set aside some funds to attract interested Masters and PhD students to carryout research in Fisheries and Aquaculture, of which the award will be on a competitive basis. Additionally, LGAs being part of the National Fisheries and Aquaculture Research Agenda as end user are obliged to set aside funds to facilitate research findings dissemination where necessary. The figure \@ref(fig:flowchart))
+
+```{r flowchart, fig.cap="The flowchart indicating implementation of the tasks"}
+knitr::include_graphics("graphics/DbaseWorkflow.pdf")
+```
+
+
+## Human resources
+Human resource is a key component in successful implementation of the research Agenda. However, it is observed that in some research Institutions, there is insufficient human capacity in terms of research skills which is crucial for effective implementation of the research Agenda. Therefore, research Institutions such as TAFIRI, FETA, IMS, UDSM, SUA, UDOM including NGOs and other related partners are urged to ensure capacity building in terms of human resources and facilities to guarantee rational utilization of resources, transfer of knowledge and technology and other related matters. 
+
+Despite of setting aside research funds by the Ministry, students under the sponsorship of the Government or any other donor or Institution will be urged to align their research proposals to National Fisheries and Aquaculture Research Agenda. The Agenda will be placed in the Ministry Web – site for general public use and also made available at all university libraries including university departments responsible for fisheries for easy tracing and tracking.
+
+## Physical resources
+Physical resources are important for effective implementation of this Research Agenda. These include laboratory, library, museum, equipment, infrastructure, transport facilities, and ICT. Thus, Ministry of Livestock and Fisheries will ensure that its research Institutions such as TAFIRI and FETA are well equipped in terms of physical resources for proper implementation of the agenda.
+
+## Financial resources
+Always financial resources is a critical issue in many areas and funds have never been adequate or sufficient in any developmental areas and in particular research programs. Beside the financial predicament, the Agenda objectives have to be achieved for optimal benefits leading to improved fisheries management and aquaculture resources. In this case, reliable funds should be sought as it is fundamental for implementation of the research Agenda. Therefore, it is the responsibility of the Ministry, COSTECH, Research Institutions, Local Government Authorities and friends of fisheries to set aside funds to implement the Agenda. 
+
+Along with setting funds, the research Institutions are urged to write competitive research proposals which are marketable to donors such as COSTECH, WWF, FAO, LVFO, EAC, AU-AIBAR, EU, World Bank etc. As said earlier, the Ministry will set aside some funds to sponsor Masters and PhD student who in turn will carry out research in fisheries and aquaculture based on the Agenda. Also, LGAs will be encouraged to set aside funds as it is stipulated in the National Research and Development Policy to address local challenges including dissemination of new technologies. See table \@ref(tab:tab1)
+
+```{r tab1}
+require(tidyverse)
+
+iris %>% janitor::clean_names() %>% sample_n(size = 10) %>% 
+  kableExtra::kbl(format = "latex", caption = "Sample of iris dataset", col.names = c("Length", "Width", "Length", "Width", "Species"), booktabs = TRUE) %>% 
+  kableExtra::add_header_above(c("Sepal" = 2, "Petal" = 2, "")) %>% 
+  kableExtra::kable_styling(latex_options = "hold_position")
+```
+
+
+

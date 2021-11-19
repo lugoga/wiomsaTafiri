@@ -1,0 +1,113 @@
+--- 
+title: "Fisheries and Mariculture Research Findings in support of Decision Making and Policy Formulation"
+author: "Masumbuko Semba"
+date: "Compiled on `r format(Sys.time(), '%B %d, %Y')`"
+site: bookdown::bookdown_site
+documentclass: book
+classoption: oneside # twoside if you want to print on both sides
+# output:
+#   bookdown::pdf_book:
+#     # toc: no
+#     template: null
+#     includes:
+#       in_header: texyihui/preamble.tex
+#       before_body: texyihui/before_body.tex
+bibliography: bio.bib
+# url: your book url like https://bookdown.org/yihui/bookdown
+cover-image: images/mendingGear.jpg
+description: |
+  Fisheries and Aquaculture Sectors are among the important economic sectors in the country as they contribute to food security and households’ income to fishing communities and other related fisheries communities..
+github-repo: rstudio/bookdown-demo
+
+
+header-includes:
+  - \AtBeginDocument{\frontmatter}
+  - \usepackage{fontspec}
+  - \usepackage{float}
+  - \setmainfont{Adobe Caslon Pro} #Times New Roman
+  - \usepackage[none]{hyphenat}
+  
+  - \usepackage{fancyhdr}
+  - \pagestyle{fancy} 
+  - \fancyhead{} # clear headers
+  - \fancyfoot{} # clear footers 
+  - \renewcommand{\headrulewidth}{0pt} # eliminate horizontal line 
+  - \fancyfoot[c]{\thepage}
+  
+  - \usepackage{makeidx}
+  - \makeindex
+  
+  
+papersize: a4
+# geometry: "left=2.5cm, right=2cm, top=2cm, bottom=2.5cm"
+fontsize: 12pt
+linestretch: 1.2
+links-as-notes: true
+secnumdepth: 4
+number_sections: true
+lof: true
+lot: true
+
+
+## polishing
+link-citations: true
+colorlinks: true
+linkcolor: 'blue'
+citecolor: 'red'
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, comment = "")
+```
+
+# Forword {-}
+Fisheries\index{fisheries} and Aquaculture\index{aquaculture} Sectors are among the important economic sectors in the country as they contribute to food security and households’ income to fishing communities and other related fisheries\index{fisheries} communities. The sectors contribution to the National Gross Domestic Products (GDP) for year 2018 was 1.7% with an annual growth rate of 9.2. The growth rate is low compared to the numerous and vast water resources, such as the great lakes, marine waters, minor lakes, dams, rivers and wetlands. However, the contribution to the National GDP can rise to more than 5% if capture fisheries\index{fisheries} and aquaculture\index{aquaculture} are sustainably managed and rationally utilized.
+
+The low growth rate is contributed by several constrains such as sharp increase in fishing effort, unsustainable harvesting of fisheries\index{fisheries} resources accelerated by population growth, fish protein demand, use of illegal fishing gears and methods, environmental degradation, ecological changes, climate change and diversification of natural water flow from rivers and streams for differnt uses, fish post harvest looses and slow growth rate in aquaculture\index{aquaculture} industry.
+
+In order to curb the above constraints an effective research program is of paramount important. Research play a very crucial role in the socio-economic development of fishing communities leading to improved standards of living for fisheries\index{fisheries} dependent societies e.g. enhancement of fisheries\index{fisheries} and aquaculture\index{aquaculture} productivity, food security and development of technologies that would simplify people’s lives. Also research provides information for guiding the management in decision making in relation to fisheries\index{fisheries} management, socio-economic transformation and proper areas of investment for attainment of sectors set objectives.
+
+Thus, the existence of a vibrant National Fisheries\index{fisheries} and Aquaculture Research Agenda that have specify priority research areas countrywide is important in order to achieve the sectors objectives. It is apparent that, the previous National fisheries\index{fisheries} Research Agenda (2015–2020) had several shortfalls in relation to socio-economic development particularly in addressing the current needs and demand of the sectors. Such gaps included but not limited to:- 1) lack of a political dimension, 2) implementation of the obsolete National fisheries\index{fisheries} Policy and Strategy of 1997, 3) emerging micro and macroeconomic policy changes, 4) emerging challenges in fisheries\index{fisheries} sector such as illegal fishing practices associated with environmental destruction, 5) renaissance of Tanzania Fishing Company (TAFICO) and 6)reflection of the current principles of blue economy. Consequently, based on the limitations of the previous Research Agenda (2015-2020), the National fisheries\index{fisheries} and Aquaculture Research Agenda (2020-2025) is developed in order to comprehensively cover these areas as well as research needs in the country.
+
+Therefore, this Research Agenda intends to strengthen the science, policy and political crossing points in fisheries\index{fisheries} and aquaculture\index{aquaculture} sectors, strategic and efficient deployment of resources, strengthening linkages between the Ministry, Academia, research Institutions, Local Government Authorities, Ward to Village level, and finally Nationally, Regionally and Internationally.
+
+Moreover, this Research Agenda, is geared to provide opportunity for the numerous research findings laying under the shelves in Universities, research Institutions, NGOs, Private Sector and Individuals, and in particular the Masters and PhDs studies to be brought up and made useful for fisheries\index{fisheries} management. This is motivated by fact that, for many years students have been undertaking significant scientific researches which have never been translated into tangible products, processes and services for developmental purposes. Hence, these findings should be consolidated and disseminated to contribute to the government’s industrialization efforts and quenching the technological development in Tanzania.
+
+Furthermore, the Ministry of Livestock and fisheries\index{fisheries} (fisheries\index{fisheries} Sector), will establish a research coordination team that will act as a link between the Ministry and other research Institutions within and outside the country as an overseer of all fisheries\index{fisheries} and fisheries\index{fisheries} related research and research findings. Also the Ministry will conduct an annual fisheries\index{fisheries} scientific fora with assemblage of different researchers and related scientists in order to receive and translate the research findings into practical terms.
+
+Also, the Ministry of Livestock and fisheries\index{fisheries} (fisheries\index{fisheries} Sector), will set aside some funds in its annual budget to allow the interested Tanzanian\index{Tanzania} students to carryout fisheries\index{fisheries} research within the framework of this National fisheries\index{fisheries} and Aquaculture Research Agenda 2020-2025 priority research areas. This will enable the Ministry to harness expertise and experience from Tanzanians who otherwise would have remained unutilized or underutilized. Moreover, regulations will be developed for smooth and rational implementation of the Agenda. In line with that, students carrying out research in fisheries\index{fisheries} and fisheries\index{fisheries} related matters will be required to write Policy Briefs for Ministry consumption upon completion of their research work.
+
+Pursuant to the aforesaid, My Ministry and I, called for the development of this National fisheries\index{fisheries} and Aquaculture Research Agenda (2020–2025). This Research Agenda is also anticipated to contribute to the achievement of the Tanzania Development Vision (TDV) 2025, which one of its goals, is to have a fisheries\index{fisheries} and Aquaculture sectors, which to large extent are commercially operated and sustainably managed based on scientific and demand driven research by year 2025. Thus, research can’t be separated from management and development of fisheries\index{fisheries} and aquaculture\index{aquaculture} industry in Tanzania.
+
+# Executive Summary {-}
+fisheries\index{fisheries} resources in Tanzania are subjected to drivers of ecosystem changes caused by anthropogenic and natural drivers which need a consistency benchmarking for proper utilization of the ecosystem services. The government of Tanzania through the Ministry of Livestock and fisheries\index{fisheries} has a role of ensuring that fisheries\index{fisheries} research is conducted in all water bodies, for the purpose of benchmarking the fisheries\index{fisheries} resources and their environment. This calls for the need to develop a National Fisheries and Aquaculture Research Agenda 2020-2025. The preparation and development of the National Fisheries and Aquaculture Research Agenda involved the participation of different fisheries\index{fisheries} stakeholders in the country who specifically categorized five research priorities.
+
+The five research priorities include: Aquatic ecosystems; Sustainable capture fisheries\index{fisheries}; Aquaculture growth; Marketing and trade of fish and aquatic products and Cross Cutting. In each research priority different research areas were developed, totaling into 73 research areas of which 39 are short term and 34 are long term. Implementation of this Research Agenda requires adequate and timely availability of resources as well as collaboration with other research institutions at national, regional and international levels. Therefore, it is the responsibility of the Ministry of Livestock and Fisheries to advise and direct researchers and research institutions and in particular the Tanzania Fisheries Research Institute (TAFIRI) on the implementation of the Agenda. Hence, the coordination of all activities and dissemination of research findings will be done not only by the Ministry of Livestock and Fisheries but also with other institutions.
+
+The Ministry of Livestock and Fisheries (Fisheries Sector) will monitor the implementation of this Research Agenda by conducting at least annual scientific meeting that will draw members from fisheries\index{fisheries} research Institutions and other related stakeholders in order to ensure its effectiveness during implementation. The Research Agenda will be reviewed after every five years or upon changes in national policies or depending on demand or when deemed necessary.
+
+In summary, this agenda is an important tool to guide fisheries\index{fisheries} managers in decision making for the purpose of sectors development, hence, leading to increased contribution to the national economy and the livelihoods of all Tanzanians. Also it contributes to the attainment of the Tanzania Development Vision (TDV) 2025 goals.
+
+# Acknowledgement {-}
+This study was conducted to assess stocks of bigeye, yellowfin tunas and swordfish in the territorial and Exclusive Economic Zone (EEZ) of Tanzania. We used length-based approach that is capable to estimate stocks from poor-fishery data. The study found that the stock of yellowfin and bigeye tuna in the territorial waters are underexploited but swordfish and yellowfin in EEZ are overexploited. Furthermore, swordfish and yellowfin and bigeye tuna are caught before attaining maturity. The onset of maturity for yellowfin and bigeye in the territorial waters occurs during the southeast monsoon season, a period that is predominated with juvenile both in Tanga and Mtwara. The study call for management of swordfish and yellowfin tuna in the EEZ and continual collection of fisheries\index{fisheries} data that will  help in sustainable management of tuna and tuna like species. 
+
+<!-- # Dedication {-} -->
+<!-- This work is dedicated to Nyamisi! -->
+
+# List of Abbreviation {-}
+
+```{r}
+labv = readr::read_csv("list_abbreviation.csv") %>% 
+  dplyr::select(1:2)
+
+labv %>% 
+  kableExtra::kbl(longtable = TRUE, booktabs = TRUE, col.names = c("Abbreviation", "Description")) %>% 
+  kableExtra::kable_styling(latex_options = c("hold_position", "stripped", "repeat_header"))
+```
+
+
+
+\mainmatter
+
+

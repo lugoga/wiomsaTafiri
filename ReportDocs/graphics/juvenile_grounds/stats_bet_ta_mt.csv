@@ -1,0 +1,11 @@
+region,season,species,fishing_ground,counts,statistic,p.value
+Tanga,NE,Bigeye,Wamba,34,16.94117647,3.86E-05
+Tanga,NE,Bigeye,Mataani,15,11.26666667,7.89E-04
+Tanga,NE,Bigeye,Gongoni,18,18,2.21E-05
+Tanga,SE,Bigeye,Wamba,21,,
+Mtwara,NE,Bigeye,Vyulu,12,12,5.32E-04
+Mtwara,NE,Bigeye,Majomvi,49,3.448979592,0.063290832
+Mtwara,SE,Bigeye,Vyulu,2,2,0.157299207
+Mtwara,SE,Bigeye,Majomvi,16,16,6.33E-05
+Mtwara,SE,Bigeye,Kivale,3,3,0.083264517
+Mtwara,SE,Bigeye,Bohari,7,7,0.008150972

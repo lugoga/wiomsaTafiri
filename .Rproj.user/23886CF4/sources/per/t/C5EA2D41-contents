@@ -1,0 +1,165 @@
+---
+title: "Publications"
+author: "Masumbuko Semba and Nyamisi Peter"
+date: "11/14/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+require(ggwordcloud)
+require(magrittr)
+require(tidyverse)
+require(tidytext)
+require(wordcloud)
+require(RColorBrewer)
+
+pal <- brewer.pal(8,"Dark2")
+
+```
+
+
+```{r}
+pub.list = list.files(path = "d:/semba/wiomsa_capacity_fisheries/googleSearch/", pattern = ".csv", full.names = TRUE, recursive = TRUE)
+```
+
+```{r}
+pub.list[10] %>% 
+  read_csv()
+```
+
+```{r}
+all.pubs = list()
+
+for (i in 1:length(pub.list)){
+  all.pubs[[i]] = pub.list[i] %>% 
+  read_csv()
+}
+```
+
+```{r}
+pubs.df = all.pubs %>% 
+  bind_rows() %>% 
+  janitor::clean_names() %>% 
+  # glimpse()
+  select(authors, title, year, publisher, type, abstract)
+```
+
+Remove dublicated publications
+
+```{r}
+publications = pubs.df%>% 
+  distinct()
+```
+
+
+```{r, eval=FALSE}
+publications %>% 
+  write_csv("d:/semba/wiomsa_capacity_fisheries/processedData/publications.csv")
+```
+
+
+
+
+
+## Word cloud based on titles
+
+```{r}
+publications %>% 
+  # filter(is.na(title))
+  select(title) %>%
+  tidytext::unnest_tokens(input = title, output = word) %>% 
+  mutate(len = str_length(string = word))%>% 
+  filter(len >3) %>% 
+  select(word) %>% 
+  mutate(word = str_to_title(string = word), 
+         word = if_else(word == "Machumu", "Kishe", word)) %>% 
+  group_by(word) %>% 
+  count(sort = TRUE)%>%
+  ungroup() %>% 
+  top_n(200) %$% 
+  ggwordcloud(words = word, 
+            freq = n, 
+            colors = pal, 
+            max.words = 180, 
+            random.order = FALSE, 
+            min.freq = 3)+
+  ggthemes::theme_solarized_2()
+```
+
+## Word cloud based on abstract
+
+```{r}
+publications %>% 
+  # filter(is.na(title))
+  select(abstract) %>%
+  tidytext::unnest_tokens(input = abstract, output = word) %>% 
+  mutate(len = str_length(string = word))%>% 
+  filter(len >3) %>% 
+  select(word) %>% 
+  mutate(word = str_to_title(string = word), 
+         word = if_else(word == "Machumu", "Kishe", word)) %>% 
+  group_by(word) %>% 
+  count(sort = TRUE)%>%
+  ungroup() %>% 
+  top_n(200) %$% 
+  ggwordcloud(words = word, 
+            freq = n, 
+            colors = pal, 
+            max.words = 180, 
+            random.order = FALSE, 
+            min.freq = 3)+
+  ggthemes::theme_solarized_2()
+```
+
+## Word cloud based on authors
+
+```{r}
+publications %>% 
+  # filter(is.na(title))
+  select(authors) %>%
+  tidytext::unnest_tokens(input = authors, output = word) %>% 
+  mutate(len = str_length(string = word))%>% 
+  filter(len >3) %>% 
+  select(word) %>% 
+  mutate(word = str_to_title(string = word), 
+         word = if_else(word == "Machumu", "Kishe", word)) %>% 
+  group_by(word) %>% 
+  count(sort = TRUE)%>%
+  ungroup() %>% 
+  top_n(200) %$% 
+  ggwordcloud(words = word, 
+            freq = n, 
+            colors = pal, 
+            max.words = 180, 
+            random.order = FALSE, 
+            min.freq = 3)+
+  ggthemes::theme_solarized_2()
+```
+
+
+## Word cloud based on publisher
+
+```{r}
+publications %>% 
+  # filter(is.na(title))
+  select(publisher) %>%
+  tidytext::unnest_tokens(input = publisher, output = word) %>% 
+  mutate(len = str_length(string = word))%>% 
+  filter(len >4) %>% 
+  select(word) %>% 
+  mutate(word = str_to_title(string = word), 
+         word = if_else(word == "Machumu", "Kishe", word)) %>% 
+  group_by(word) %>% 
+  count(sort = TRUE)%>%
+  ungroup() %>% 
+  top_n(200) %$% 
+  ggwordcloud(words = word, 
+            freq = n, 
+            colors = pal, 
+            max.words = 180, 
+            random.order = FALSE, 
+            min.freq = 3)+
+  ggthemes::theme_solarized_2()
+```

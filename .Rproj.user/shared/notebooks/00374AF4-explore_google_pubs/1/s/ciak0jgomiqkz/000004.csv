@@ -1,0 +1,15 @@
+"0","pub.list[10] %>% "
+"0","  read_csv()"
+"2","[1m[1mRows: [1m[22m[34m[34m7[34m[39m [1m[1mColumns: [1m[22m[34m[34m26[34m[39m
+"
+"2","[36m--[39m [1m[1mColumn specification[1m[22m [36m----------------------------------------------------------------------------------------------------------------[39m
+[1mDelimiter:[22m "",""
+[31mchr[39m  (11): Authors, Title, Source, Publisher, ArticleURL, CitesURL, Type, DOI, Abstract, FullTextURL, RelatedURL
+[32mdbl[39m   (8): Cites, Year, GSRank, ECC, CitesPerYear, CitesPerAuthor, AuthorCount, Age
+[33mlgl[39m   (6): ISSN, CitationURL, Volume, Issue, StartPage, EndPage
+[34mdttm[39m  (1): QueryDate
+"
+"2","
+[36mi[39m Use [38;5;235m[48;5;253m[38;5;235m[48;5;253m`spec()`[48;5;253m[38;5;235m[49m[39m to retrieve the full column specification for this data.
+[36mi[39m Specify the column types or set [38;5;235m[48;5;253m[38;5;235m[48;5;253m`show_col_types = FALSE`[48;5;253m[38;5;235m[49m[39m to quiet this message.
+"

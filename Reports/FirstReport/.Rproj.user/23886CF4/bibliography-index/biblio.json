@@ -1,0 +1,195 @@
+{
+    "sources": [
+        {
+            "URL": "https://github.com/jkeirstead/scholar",
+            "author": [
+                {
+                    "family": "Keirstead",
+                    "given": "James"
+                }
+            ],
+            "id": "scholar",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "note": "R package version 0.1.5",
+            "title": "Scholar: Analyse citation data from google scholar",
+            "title-short": "Scholar",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "literal": "APA"
+                }
+            ],
+            "id": "apa",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "note": "[Online; accessed 26-October-2021]",
+            "publisher": "https://www.apa.org/pubs/psycinfoservices/index",
+            "title": "Metadata and citation data requests for APA PsycInfo subscribers on APA PsycNet",
+            "type": ""
+        },
+        {
+            "author": [
+                {
+                    "family": "Harzing",
+                    "given": "Anne-Wil K"
+                },
+                {
+                    "family": "Van der Wal",
+                    "given": "Ron"
+                }
+            ],
+            "container-title": "Ethics in science and environmental politics",
+            "id": "harzing2008google",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2008
+                    ]
+                ]
+            },
+            "page": "61-73",
+            "title": "Google scholar as a new source for citation analysis",
+            "type": "article-journal",
+            "volume": "8"
+        },
+        {
+            "author": [
+                {
+                    "literal": "Wikipedia contributors"
+                }
+            ],
+            "id": "googleform",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "note": "[Online; accessed 27-October-2021]",
+            "publisher": "https://en.wikipedia.org/w/index.php?title=Google_Forms&oldid=1011662016",
+            "title": "Google forms — Wikipedia, the free encyclopedia",
+            "type": ""
+        },
+        {
+            "author": [
+                {
+                    "family": "Bensman",
+                    "given": "Stephen J"
+                }
+            ],
+            "container-title": "Scientometrics",
+            "id": "bensman2011anne",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2011
+                    ]
+                ]
+            },
+            "page": "339-342",
+            "publisher": "Akadémiai Kiadó, co-published with Springer Science+ Business Media BV …",
+            "title": "Anne-wil harzing: The publish or perish book: Your guide to effective and responsible citation analysis: Tarma software research pty ltd, melbourne, australia, c2010, ISBN 978-0-9808485-1-9, US 49.95(paperback,blackandwhite),US 74.95 (paperback, color)",
+            "title-short": "Anne-wil harzing",
+            "type": "article-journal",
+            "volume": "88"
+        },
+        {
+            "URL": "https://www.R-project.org/",
+            "author": [
+                {
+                    "literal": "R Core Team"
+                }
+            ],
+            "id": "r",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "publisher": "R Foundation for Statistical Computing",
+            "publisher-place": "Vienna, Austria",
+            "title": "R: A language and environment for statistical computing",
+            "title-short": "R",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Herlina",
+                    "given": "Herlina"
+                },
+                {
+                    "family": "Acim",
+                    "given": "Acim"
+                },
+                {
+                    "family": "Misnah",
+                    "given": "Misnah"
+                },
+                {
+                    "family": "Khairunnisa",
+                    "given": "Rifka"
+                }
+            ],
+            "container-title": "Jurnal Dikdas",
+            "id": "herlina2019need",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "page": "143-150",
+            "title": "Need analysis of using google form for learning",
+            "type": "article-journal",
+            "volume": "7"
+        },
+        {
+            "author": [
+                {
+                    "family": "Pregernig",
+                    "given": "Michael"
+                }
+            ],
+            "container-title": "Biodiversity and Conservation",
+            "id": "pregernig2014framings",
+            "issue": "14",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014
+                    ]
+                ]
+            },
+            "page": "3615-3639",
+            "publisher": "Springer",
+            "title": "Framings of science-policy interactions and their discursive and institutional effects: Examples from conservation and environmental policy",
+            "title-short": "Framings of science-policy interactions and their discursive and institutional effects",
+            "type": "article-journal",
+            "volume": "23"
+        }
+    ],
+    "project_biblios": [
+        "bio.bib"
+    ]
+}

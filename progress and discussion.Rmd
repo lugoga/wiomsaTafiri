@@ -1,0 +1,35 @@
+---
+title: "Paul discussion"
+author: "Masumbuko Semba"
+date: "11/8/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+A phone call with Paul on 8th November 2021
+
+Publication list
+ 1. peer reviewed paper
+ 2. scientific reports
+ 
+ In any of these two categories, extrack key metadata information which include:
+    the author, 
+    year of publication, 
+    keywords, 
+    abstract
+  
+ Explore whether the publications listed are above were conducted for either a basic or applied science
+ 
+ Investigate the methodology used. You can further it but should contain information related to whether method was
+ + 	empirical, 
+ + survey, 
+ + review, 
+ + laboriginal etc
+
+
+The effect of the publication
+how was he information used
+awareness or knowledge, policy brief, innovation	

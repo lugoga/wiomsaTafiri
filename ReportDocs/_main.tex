@@ -1,0 +1,588 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  12pt,
+  a4paper,
+  oneside]{book}
+\usepackage{lmodern}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+  \usepackage{amssymb}
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% L D'Agostino McGowan dissertation preamble
+% Adapted from L Samuels dissertation template
+% Adapted from Qi Liu's template
+
+\input{tex/params}
+
+% table of contents customizations:
+% \usepackage{tocstyle}
+% \usetocstyle{standard}
+% \settocfeature{raggedhook}{\raggedright}
+% \settocfeature{leaders}{\hfill}
+
+\usepackage{alltt} % for knitr code output
+\usepackage{etoolbox} % for toggle
+\usepackage[left=1.5in,right=1in,top=1in,bottom=1in]{geometry}
+\usepackage{nomencl} % for the nomenclature (List of Abbreviations)
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage{amsbsy,bm} 
+\usepackage{lmodern} % Latin modern fonts
+\usepackage[T1]{fontenc} % font encodings
+\usepackage{framed} % for knitr code output
+\usepackage{graphicx}
+\usepackage{multirow} % need this for table in Paper 1
+\usepackage[font=singlespacing]{caption}
+\usepackage{setspace}
+\usepackage{titlesec}
+% \usepackage[table]{xcolor}
+\usepackage{float}
+\usepackage{colortbl} % allows coloring of individual cells
+\usepackage{natbib}
+\usepackage{mathtools} % allows split fractions
+\usepackage{indentfirst} % Indent first paragraph at beginning of section
+\usepackage{subfig} % This one is required by something else
+\usepackage[titletoc,title]{appendix}
+% \usepackage[tocgraduated]{tocstyle} % This package is still in alpha, but we need it for VU
+\usepackage{array}
+\usepackage{listings} % Typeset source code listings using LATEX
+\usepackage{makeidx}
+\usepackage{booktabs}
+\usepackage[subfigure, titles]{tocloft} % lets us format TOC for VU
+\usepackage[nottoc,notlof,notlot]{tocbibind}
+\usepackage{pdflscape}
+\usepackage{placeins} % for \FloatBarrier
+\hypersetup{
+    bookmarksnumbered=false, % true means bookmarks in left window are numbered
+    bookmarksopen=false,     % true means only level 1 is displayed.
+    colorlinks=true,         % false: boxed links; true: colored links
+    linkcolor=black,          % color of internal links
+    citecolor=black,          
+    urlcolor=black,          
+    pdfstartview=FitH
+}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}% clear headers
+\fancyfoot{}% clear footers
+\renewcommand{\headrulewidth}{0pt}% eliminate horizontal line
+\fancyfoot[c]{\thepage}
+
+\urlstyle{same}
+\bibliographystyle{vandy_dissertation}
+\setcounter{secnumdepth}{7}
+\setcounter{tocdepth}{7}
+\captionsetup{font=footnotesize}
+\setcitestyle{citesep={;}, aysep={,}}
+
+\graphicspath{{paper1/figs/}{paper2/figs/}{paper3/figs/}}
+\DeclareGraphicsExtensions{.pdf,.jpeg,.png,.PNG,.eps,.tiff}
+
+\textwidth=6in \oddsidemargin=0.5in \topmargin=-0.5in
+\textheight=9in  % 9in must include page numbers
+\textfloatsep = 0.4in 
+
+\addtocontents{toc}{\vspace{0.4in} \protect \hfill Page\endgraf} 
+\addtocontents{lof}{\vspace{0.2in} \hspace{0.13in} \ Figure \protect \hfill Page\endgraf} 
+\addtocontents{lot}{\vspace{0.2in} \hspace{0.13in} \ Table \protect\hfill Page\endgraf}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% Table of contents %%%%%%%%%%%%%%%%%
+\renewcommand{\contentsname}{TABLE OF CONTENTS}
+\renewcommand{\cftchapfont}{\normalfont}
+\renewcommand{\cftchappagefont}{\normalfont}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% List of figures %%%%%%%%%%%%%%%%%%
+\renewcommand{\listfigurename}{LIST OF FIGURES}
+\setlength{\cftbeforefigskip}{0.2in}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% List of tables %%%%%%%%%%%%%%%%%%%
+\renewcommand{\listtablename}{LIST OF TABLES}
+\setlength{\cftbeforetabskip}{0.2in}
+
+%%%%%%%Configure List of Abbreviations%%%%%%%%%%%%
+\renewcommand{\nompreamble}{\vspace{0.25in}} % code after main title
+\makenomenclature
+\renewcommand{\nomname}{LIST OF ABBREVIATIONS}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% Bibliography %%%%%%%%%%%%%%%%%%%%
+\renewcommand{\bibname}{\texorpdfstring{{REFERENCES\vspace{10mm}}}{REFERENCES}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% Chapter headings %%%%%%%%%%%%%%%%%%
+\makeatletter
+\def\@makechapterhead#1{
+  {\parindent \z@ \centering
+    \normalfont
+    \ifnum \c@secnumdepth >\m@ne
+      \if@mainmatter
+        \MakeUppercase{\@chapapp}\space \thechapter
+        \par\nobreak
+        \vskip 20\p@
+      \fi
+    \fi
+    \interlinepenalty\@M
+    #1\par\nobreak
+    \vskip 40\p@
+  }}
+
+\def\@schapter#1{\if@twocolumn
+                   \@topnewpage[\@makeschapterhead{#1}]%
+                 \else
+                   \@makeschapterhead{#1}%
+                   \@afterheading
+                 \fi}
+
+\def\@makeschapterhead#1{
+  {\parindent \z@ \centering
+    \normalfont
+    \interlinepenalty\@M
+    #1\par\nobreak
+    \vskip 10\p@
+  }}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% TOC line spacing %%%%%%%%%%%%%%%%%%
+\newlength{\li}\setlength{\li}{14.48pt}
+\newlength{\di}\setlength{\di}{-3.5mm}
+
+\def\@chapter[#1]#2{\ifnum \c@secnumdepth >\m@ne
+      \refstepcounter{chapter}%
+      \typeout{\@chapapp\space\thechapter.}%
+      \addcontentsline{toc}{chapter}{\numberline{\thechapter}#1}
+         %{\protect\numberline{\thechapter}\uppercase{#1}}%
+      \addtocontents{toc}{\protect\vspace{\li}}%
+  \else
+      %\addcontentsline{toc}{chapter}{\uppercase{#1}}%
+      \addcontentsline{toc}{chapter}{#1}
+      \addtocontents{toc}{\protect\vspace{\li}}%
+  \fi
+  \chaptermark{#1}%
+  \if@twocolumn
+      \@topnewpage[\@makechapterhead{\MakeUppercase{#2}}]%
+  \else
+      \@makechapterhead{\MakeUppercase{#2}}%
+      \@afterheading
+ \fi}
+
+
+\renewcommand\chapter{\addtocontents{toc}{\protect\addvspace{\li}}%
+  \if@openright\cleardoublepage\else\clearpage\fi
+  \thispagestyle{plain}%
+  \global\@topnum\z@
+  \@afterindentfalse
+  \secdef\@chapter\@schapter}
+
+\newdimen\@bls                              
+\@bls=\baselineskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% Section headings %%%%%%%%%%%%%%%%%%
+\renewcommand\section{ \@startsection {section}{1}{\z@}%
+    %{-2\@bls}%
+    {2\@bls  plus .3\@bls minus .1\@bls}%
+    {0.1\@bls}%
+    {\centering\normalfont}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% Sub-section headings %%%%%%%%%%%%%%%%
+\renewcommand\subsection{\@startsection {subsection}{2}{\z@}%
+    %{-2\@bls}%
+    {2\@bls  plus .3\@bls minus .1\@bls}%
+    {0.1\@bls}%
+    {\noindent\normalfont}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% Sub-sub-section headings %%%%%%%%%%%%%%
+\renewcommand\subsubsection{\@startsection {subsubsection}{3}{\z@}%
+    %{-1\@bls}%
+    {\@bls plus .2\@bls}%
+    %{-5pt}%
+    {0.1\@bls}%
+    %{\noindent\normalfont\bfseries}}
+    {\noindent\normalfont\itshape}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% TOC headings %%%%%%%%%%%%%%%%%%%
+\renewcommand{\@cftmaketoctitle}{
+  \chapter*{\contentsname}
+  \addcontentsline{toc}{chapter}{TABLE OF CONTENTS}} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% List of figures headings %%%%%%%%%%%%%%
+\renewcommand{\@cftmakeloftitle}{
+  \chapter*{\listfigurename}
+  Figure \hfill Page
+  \addcontentsline{toc}{chapter}{LIST OF FIGURES} } 
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% List of tables headings %%%%%%%%%%%%%%
+\renewcommand{\@cftmakelottitle}{
+  \chapter*{\listtablename}
+   Table \hfill Page
+   \addcontentsline{toc}{chapter}{LIST OF TABLES} }  
+
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setcounter{section}{-1}     
+
+% Define floats here
+\floatstyle{plain}
+\newfloat{Box}{h}{lob}
+\newcommand{\boxedtext}[3]{
+    \begin{Box} \caption{\small{#1}}
+    \hspace{1.cm}
+    \fbox{\begin{minipage}[c]{0.85\linewidth} 
+    
+    \small{#2}
+   
+   \end{minipage}}
+   
+   \label{#3}
+   \end{Box}
+}
+
+\let\mySpacing=\onehalfspacing
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+
+\pagenumbering{alph}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+\thispagestyle{empty}\enlargethispage{\the\footskip}%
+\begin{center}
+    {\setstretch{1.66} {\maintitle}\par }%
+    \vskip.4in
+    By
+    \vskip .3in
+    {\myname}
+    \vskip .3in
+    
+    \begin{doublespace}
+    Dissertation\\
+    Submitted to the Faculty of the \\
+    Graduate School of \myuniversity \\
+    in partial fulfillment of the requirements \\
+    for the degree of \\ [.1in]
+    \end{doublespace}
+    
+    \MakeUppercase{DOCTOR OF PHILOSOPHY} \\[.1in]
+    in \\[.1in]
+    {\mydiscipline} \\[.25in]
+    \mygraddate \\[.25in]
+    \mycitystate
+\end{center}
+\vskip .5in
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% Approved names %%%%%%%%%%%%%%%%%%
+\begin{center}
+\begin{doublespace}
+Approved:\\
+\Chair\\
+\Advisor \\
+\OtherInternalMember \\
+\ExternalMember \\
+\end{doublespace}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% Uncomment for Signatures %%%%%%%%%%%%%%
+%Approved: \hskip 2.9in Date:\\[1.2em]
+% \hskip -0.24in Approved: \hskip 2.85in Date:\\[1.2em]
+% \rule{3.5in}{.5pt} \hskip 0.1in \rule{2in}{.5pt} \\[.01in]
+% \Chair \\[.14in]
+% \rule{3.5in}{.5pt} \hskip 0.1in \rule{2in}{.5pt}  \\[.01in]
+% \Advisor \\[.14in]
+% \rule{3.5in}{.5pt} \hskip 0.1in \rule{2in}{.5pt} \\[.01in]
+% \OtherInternalMember \\[.14in]
+% \rule{3.5in}{.5pt} \hskip 0.1in \rule{2in}{.5pt} \\[.01in]
+% \ExternalMember \\[.14in]
+% \\[.14in]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{titlepage}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% Copyright page %%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}%\enlargethispage{\the\footskip}%
+\vspace*{\fill}
+\begin{center}
+Copyright \copyright ~\mypubyear~by \myname\\
+All Rights Reserved
+\end{center}
+\vspace*{\fill}
+\clearpage
+
+
+\mySpacing
+\pagenumbering{roman} \setcounter{page}{3}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% Dedication page %%%%%%%%%%%%%%%%%%
+
+\chapter*{}
+\addcontentsline{toc}{chapter}{DEDICATION}
+\vspace{7mm}
+\vspace*{\fill}
+\begin{center}
+\input{tex/dedication}
+\end{center}
+\vspace*{\fill}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% Preface page %%%%%%%%%%%%%%%
+
+\chapter*{PREFACE}
+\label{ch:Preface}
+\addcontentsline{toc}{chapter}{PREFACE}
+\vspace{7mm}
+\input{tex/Preface}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% Acknowledgements page %%%%%%%%%%%%%%%
+
+\chapter*{ACKNOWLEDGEMENTS}
+\label{ch:Acknowledgements}
+\addcontentsline{toc}{chapter}{ACKNOWLEDGEMENTS}
+\vspace{7mm}
+\input{tex/acknowledgements}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% Table of contents %%%%%%%%%%%%%%%%%
+
+\begin{singlespace}
+\tableofcontents
+\end{singlespace}
+
+\clearpage
+\addcontentsline{toc}{chapter}{\listtablename}
+\listoftables
+
+\clearpage
+\addcontentsline{toc}{chapter}{\listfigurename}
+\listoffigures
+
+\clearpage
+\addcontentsline{toc}{chapter}{\nomname}
+\printnomenclature
+
+\clearpage
+\normalsize
+\mySpacing
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\cftlocalchange{toc}{450pt}{0cm} %see tocloft documentation
+\cftaddtitleline{toc}{chapter}{Chapter}{}
+\cftlocalchange{toc}{1.55em}{2.55em}
+
+\setstretch{1.2}
+\hypertarget{introduction}{%
+\chapter{Introduction}\label{introduction}}
+
+The fisheries sector has an important role to contribute towards the national foreign exchange earnings, nutrition and livelihood of communities, many of whom depend almost entirely on fishing related activities (\protect\hyperlink{ref-kadagi2021challenges}{Kadagi et al. 2021}). Tanzania has an Exclusive Economic Zone (EEZ) of about 223,000 km\textsuperscript{2} (\protect\hyperlink{ref-easternResources}{UNEP 2001}) and territorial waters of about 64,000 km\textsuperscript{2} (\protect\hyperlink{ref-richmond1995field}{Richmond 1995}). These areas provide potential grounds for fishing of tuna and tuna-like species and other marine living resources.
+
+According to \protect\hyperlink{ref-majkowski}{Majkowski} (\protect\hyperlink{ref-majkowski}{2007}), tuna is among the most traded and consumed seafood and because of high palatability/delicacy, these species have high demand globally. Tuna comprise a number of economically important species, including yellowfin tuna (\emph{Thunnus albacares}), skipjack tuna (\emph{Katsuwonus pelamis}), bigeye tuna (\emph{Thunnus obesus}), and albacore tuna (\emph{Thunnus alalunga}) (\protect\hyperlink{ref-igulu}{Igulu and El Kharousy 2015}). Billfishes includes swordfish (\emph{Xiphias gladius}) and striped marlin (\emph{Tetrapturus audax}) (\protect\hyperlink{ref-wekesa}{Wekesa 2014}). These resources may contribute towards the nation's economic growth and food security when are exploited in sustainable manner.
+
+Tuna and tuna-like species in the Western Indian Ocean is managed by the Indian Ocean Tuna Commission (IOTC) (\protect\hyperlink{ref-hallier}{Hallier and Million 2009}). The objective of the Commission is to ensure, through appropriate management, the conservation and optimum utilization of stocks covered (\protect\hyperlink{ref-ceo2012performance}{Ceo et al. 2012}). The IOTC can be considered the most important fisheries management organization for tuna and tuna-like species in the WIO region including Tanzania. Tanzania as a member of IOTC is obliged to collect data and provide scientific information to support regional stock assessment of relevant tuna and tuna like species. This mandate, led to establishment of the Deep Sea Fishing Authority (DSFA) in 2010 to manage, coordinate, and develop of tuna fisheries within the URT (\protect\hyperlink{ref-dsfa}{URT 2020}).
+
+Fisheries in Tanzania comprise of two categories: small-scale and industrial fisheries. Small scale fisheries operate in territorial waters of less than 200 meter deep. The small-scale fishers use a reasonable amount of capital but with traditional involvement (\protect\hyperlink{ref-tfa}{URT 2003}). The common types of vessels used include; dugout canoes, ngalawa, dhows, mashua, planked canoes, catamarans, and axillary boats (dingy). These vessels often use shark nets, gill nets, purse seines/ surrounding nets, long lines, hand lines, cast nets, lift-nets, scoop nets, traps/baskets and ring nets (\protect\hyperlink{ref-tfa}{URT 2003}). The Industrial fishing is the second category that operates in the EEZ (Figure \ref{fig:pfz-map}). Industrial EEZ fisheries are exploited mostly by Distant Water Fishing Nations (DWFN) vessels under a license agreement with DSFA (\protect\hyperlink{ref-dsfa}{URT 2020}). The two widely used fishing gears in the EEZ includes large-scale longlines and purseseines, while pole and line methods are used for research.
+
+\hypertarget{method}{%
+\chapter{METHOD}\label{method}}
+
+\hypertarget{study-area}{%
+\section{Study Area}\label{study-area}}
+
+This research was conducted in the territorial and deep waters of Tanzania sketched in figure \ref{fig:pfz-map}.The area gegraphically located between longitude 38.5\(^\circ\)E and 43.5\(^\circ\)E and latitude 11.2\(^\circ\) S and 4\(^\circ\) S (Figure \ref{fig:pfz-map}).
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{include\_graphics}\NormalTok{(}\StringTok{"graphics/climatology\_pfz\_mar.pdf"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\textbackslash begin\{figure\}
+\textbackslash includegraphics{[}width=\%75{]}\{graphics/climatology\_pfz\_mar\}
+
+\caption{Satellite derived Potential fishing zones in the territorial and exclusive economic zone of Tanzania}
+
+\label{fig:pfz-map}
+\textbackslash end\{figure\}
+
+\hypertarget{paper-2}{%
+\chapter{Paper 2}\label{paper-2}}
+
+\hypertarget{paper-3}{%
+\chapter{Paper 3}\label{paper-3}}
+
+\hypertarget{conclusions}{%
+\chapter{Conclusions}\label{conclusions}}
+
+\hypertarget{references}{%
+\chapter*{REFERENCES}\label{references}}
+\addcontentsline{toc}{chapter}{REFERENCES}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\hypertarget{ref-ceo2012performance}{}%
+Ceo, Marika, Sarah Fagnani, Judith Swan, Kumiko Tamada, and Hiromoto Watanabe. 2012. {``PERFORMANCE REVIEWS BY REGIONAL FISHERY BODIES: INTRODUCTION, SUMMARIES, SYNTHESIS AND BEST PRACTICES Volume i: CCAMLR, CCSBT, ICCAT, IOTC, NAFO, NASCO, NEAFC.''} \emph{FAO Fisheries and Aquaculture Circular}, no. C1072: I.
+
+\leavevmode\hypertarget{ref-hallier}{}%
+Hallier, Jean-Pierre, and Julien Million. 2009. {``The Contribution of the Regional Tuna Tagging Project--Indian Ocean to IOTC Stock Assessment.''} \emph{IOTC Working Party on Tropical Tunas. IOTC-2009-WPTT-24}.
+
+\leavevmode\hypertarget{ref-igulu}{}%
+Igulu, Mathias, and Zahor Mohamed El Kharousy. 2015. {``Tanzania National Report to the Scientific Committee of the Indian Ocean Tuna Commission, 2015.''} \emph{Tanzania Fisheries Research Institute and Tanzania Deep Sea Fishing Authority}.
+
+\leavevmode\hypertarget{ref-kadagi2021challenges}{}%
+Kadagi, Nelly Isigi, Nina Wambiji, Sean Thomas Fennessy, Micheal S Allen, and Robert NM Ahrens. 2021. {``Challenges and Opportunities for Sustainable Development and Management of Marine Recreational and Sport Fisheries in the Western Indian Ocean.''} \emph{Marine Policy} 124: 104351.
+
+\leavevmode\hypertarget{ref-majkowski}{}%
+Majkowski, Jacek. 2007. {``Global Fishery Resources of Tuna and Tuna-Like Species.''}
+
+\leavevmode\hypertarget{ref-richmond1995field}{}%
+Richmond, Matthew D. 1995. {``A Field Guide to the Seashores of Eastern Africa.''} JSTOR.
+
+\leavevmode\hypertarget{ref-easternResources}{}%
+UNEP. 2001. \emph{Eastern Africa Atlas of Coastal Resources: Tanzania}. Book. United Nations Environment Programme Nairobi.
+
+\leavevmode\hypertarget{ref-tfa}{}%
+URT. 2003. {``The Fisheries Act.''} United Republic of Tanzania.
+
+\leavevmode\hypertarget{ref-dsfa}{}%
+---------. 2020. {``The Deep Sea Fisheries Management and Development Act.''} United Republic of Tanzania.
+
+\leavevmode\hypertarget{ref-wekesa}{}%
+Wekesa, Peter Nyongesa. 2014. {``Kenya National Report to the Scientific Committee of the Indian Ocean Tuna Commission, 2014.''} \emph{Ministry of Agriculture Livestock and Fisheries---State Department of Fisheries}.
+
+\end{CSLReferences}
+
+\end{document}

@@ -1,0 +1,10 @@
+region,season,species,fishing_ground,counts,statistic,p.value
+Tanga,NE,Yellowfin,Mataani,18,18,2.21E-05
+Tanga,NE,Yellowfin,Kitungamwe,38,30.42105263,3.48E-08
+Tanga,NE,Yellowfin,Chundo,2,2,0.157299207
+Tanga,SE,Yellowfin,Kitungamwe,7,,
+Mtwara,NE,Yellowfin,Vyulu,24,,
+Mtwara,NE,Yellowfin,Nyuli,6,,
+Mtwara,NE,Yellowfin,Majomvi,11,,
+Mtwara,SE,Yellowfin,Msanga,4,4,0.045500264
+Mtwara,SE,Yellowfin,Majomvi,28,2.285714286,0.130570018

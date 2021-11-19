@@ -1,0 +1,19 @@
+"0",""
+"0","timeline = read_csv(""timeline2.csv"")"
+"2","[1m[1mRows: [1m[22m[34m[34m7[34m[39m [1m[1mColumns: [1m[22m[34m[34m2[34m[39m
+"
+"2","[36m--[39m [1m[1mColumn specification[1m[22m [36m---------------------------------------------------------------------------[39m
+[1mDelimiter:[22m "",""
+[31mchr[39m (2): Date, Deliverable
+"
+"2","
+[36mi[39m Use [38;5;235m[48;5;253m[38;5;235m[48;5;253m`spec()`[48;5;253m[38;5;235m[49m[39m to retrieve the full column specification for this data.
+[36mi[39m Specify the column types or set [38;5;235m[48;5;253m[38;5;235m[48;5;253m`show_col_types = FALSE`[48;5;253m[38;5;235m[49m[39m to quiet this message.
+"
+"0","timeline %>% "
+"0","  select(-Date) %>% "
+"0","  kableExtra::kbl(caption = ""Delivarable"") %>% "
+"0","  # kableExtra::column_spec(column = 1, width = ""4cm"") %>% "
+"0","  kableExtra::pack_rows(group_label = ""October 30, 2021"", start_row = 1,end_row = 1)%>% "
+"0","  kableExtra::pack_rows(group_label = ""November 30, 2021"", start_row = 2,end_row = 6)%>% "
+"0","  kableExtra::pack_rows(group_label = ""January 15, 2022"", start_row = 7,end_row = 7)"

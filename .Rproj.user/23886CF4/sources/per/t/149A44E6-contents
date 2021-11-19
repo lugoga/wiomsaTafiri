@@ -1,0 +1,274 @@
+---
+title: "An Inception Note for assessing the relationship between Government-affiliated fisheries research institutes and relevant departments and Ministries on the use of research results"
+subtitle: "Current Practices and Capacity Building Needs at TAFIRI"
+author: "Masumbuko Semba"
+date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  bookdown::pdf_document2:
+    latex_engine: xelatex
+    
+
+editor_options: 
+  chunk_output_type: inline
+  
+
+header-includes:
+  - \usepackage{fontspec}
+  - \usepackage{float}
+  - \setmainfont{Adobe Caslon Pro} #Times New Roman
+  - \usepackage[none]{hyphenat}
+  
+papersize: a4
+geometry: "left=2.5cm, right=2cm, top=2cm, bottom=2.5cm"
+fontsize: 12pt
+linestretch: 1.2
+secnumdepth: 4
+number_sections: true
+indent: false
+lof: false
+lot: false
+toc: false
+toc_depth: 4
+
+## polishing
+link-citations: true
+colorlinks: true
+linkcolor: 'blue'
+citecolor: 'red'
+    
+    
+bibliography: bio.bib
+
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,  message = FALSE, warning = FALSE, 
+                      comment = "", fig.pos = "H", out.extra = "")
+
+require(tidyverse)
+
+# qrcode::qrcode_gen(dataString = "Masumbuko semba")
+```
+
+\newpage
+```{=latex}
+% Trigger ToC creation in LaTeX
+\tableofcontents
+
+
+```
+
+
+
+```{=latex}
+
+% Trigger LOT and LOF creation in LaTeX
+\listoffigures
+\listoftables
+
+
+```
+
+
+\newpage
+
+
+<!-- Under the supervision of the main consultant, Dr Paul Onyango, a consultant is recruited to assist in the assessment of the relationship between Government-affiliated fisheries research institutes and relevant departments and Ministries on the use of research results: Assessment of Current Practices and Identification of Capacity Building Needs. -->
+
+# Introduction
+
+Human societies currently face major environmental crises and human-accelerated environmental change worldwide. Arguably, there is a critical need for evidence-based information to guide resources policy. Amid rapid scientific and technological change and increasing complexity, there is growing concern about the ability of governments to absorb the findings of scientific research and technological advancements. Knowledge exchange and transfer are the foundation for good science and science-policy interactions [@pregernig2014framings].The complex field of fisheries conservation, like many other areas of environmental policy and management, is considered to be in urgent need of sound scientific expertise. However, incorporate scientific knowledge findings to political and societal decision-making in the development of legislation, policy and regulation is a persistent challenge. 
+
+In light of recent debates on the concepts of *evidence-based* public policy versus *evidence-informed* public policy, has called a need for integrate scientific-based information in formulation of legislation, policy and regulations. The low level of knowledge transfer between all actors--- government institutions, the private sector, civil society and science calls for better transfer mechanisms, collaboration and communication. These synergy ensures the sustainable management of aquatic resources that support livelihood of millions of people in the region. 
+
+Sustainable conservation and proper use of aquatic environment requires policy that are clear, practicable and knowledge-based on scientific information. At a basic level, the role of science is to provide an evidence base for decisions. However, research outputs and scientific expertise are hardly integrated into policy formulation. Sharing data and scientific knowledge among scientists and between science and management organizations is limited. Similarly, decision-makers often neglect to articulate their specific data and information needs to scientists, which preclude knowledge in national and international research agendas. Understanding how information flows between scientific and decision-makers is essential for the creation of effective strategies to link scientific advice to management decisions. Recognizing that aspect, the Nairobi Convention established the *Science-to-Policy* Platform. 
+
+
+<!-- Research in the countries of the WIO region is undertaken mainly by universities, Government-affiliated research institutes, national and regional NGOs, and by scientists from outside of the region. With the exception of the research initiatives undertaken by Government-affiliated research institutes, research by other organizations is not necessarily aligned to the needs of management authorities. The research agenda of Government-affiliated research institutes such as the Kenya Marine and Fisheries Research Institute (KMFRI); Tanzania Fisheries Research Institute (TAFIRI) and the Fisheries Research Institute (IIP) of Mozambique should generally be guided by the management objectives of the departments or Ministries to which they are affiliated as well as relevant national policies.  -->
+
+<!-- Related to this, the question which arises is who defines the priority research agenda of the Government-affiliated research institutes? What are the main sources of technical information for management authorities and decision-makers?  Is there a framework at the Ministerial level for integrating research results by these institutions into management and decision-making processes? -->
+
+<!-- While Government-affiliated research institutes usually publish their research results as technical reports, other research organizations often publish their information in academic peer-reviewed publications (which include papers, books and theses) and more rarely in technical reports. Both these forms of dissemination of research results have presented challenges in terms of being accessible to policy makers and management authorities. Different mechanisms have been used in the region in the attempt to overcome these barriers by converting publications and information into non-specialist language. Mechanisms used include the organization of science to policy workshops aiming at building trust and fostering dialogues between these two (often disparate) groups, and the production of policy briefs.  -->
+
+<!-- How effective have these mechanisms been? What are the views of the management authorities on the effectiveness of these mechanisms, especially as they have often not initiated, and may only have been marginally involved in, these mechanisms? What other mechanisms can be used to improve uptake/relevance? -->
+
+Increasingly, governments of the WIO region are demanding researchers to demonstrate how their research results will be used in supporting decision-making/management processes. This has led to increasing interest among scientists to conduct management-/policy-relevant research. However, the knowledge of how management authorities have used, or are using research findings in the decision-making processes, is still limited. Therefore, this research aim to investigate how scientific information generated by Tanzania Fisheries Research Institute (TAFIRI) and and other organizations is integrated in decision-making processes and legal framework formulation. Through this work, opportunities and barriers to scientific evidenced findings in coastal and marine environment is integrated for sustainable fisheries management.  
+
+## Governance and policies
+> Good governance and accountability are fundamental components for creating a favorable environment for inclusive economic growth and justice in the fishery and aquaculture sectors. It ensures equitable access to and control of economic opportunities as far as fishery industry is concerned. Research in this area should contribute in achieving favorable environment among fishing communities for national economic growth and poverty reduction, civic engagement, adherence to and respect for the rule of law, human rights and absence of corruption.
+
+
+## The scope
+
+This study aim  to assess on how TAFIRI interact with other departments and Ministries responsible for fisheries--related matters. The task focuses to explore research results generated in coastal and marine environment have contributed to decision-making processes and legal framework formulation. The assessment explore the integration of research findings and policy making or decision making looking on the success and failure of the integration. To address this integration, the the following task will be undertaken;
+
+i.	Collate marine related research outputs from TAFIRI (published scientific papers, books and book chapters, technical scientific reports, conference/meeting reports and unpublished work, policy briefs, fact sheets and posters). 
+i.	Identify policies (policies, laws, regulations, and government decrees on fisheries) that have been declared since the establishment of TAFIRI research activities
+i.	Identify innovations developed by TAFIRI scientists and describe their functions, its users and support provided by TAFIRI in transferring the innovation to users
+i.	Identify policy briefs/advice that have been produced by TAFIRI and describe their focus, to whom they were targeted and their outcomes (e.g. were they transformed into policies, law, etc) 
+i.	Review the collate technical scientific reports, books and book chapters, scientific papers to identify
+    -	Policy issues in them
+    - How the policy issue was communicated to policy makers
+    -	Any use, if at all, of the information that was generated from the technical reports, books and book chapters and scientific papers
+i.	Review TAFIRI’s Act/Regulation and staff promotion guideline/criteria to identify similarities, differences and whether the two documents are aligned to each other.
+i.	To analyze and preparation illustrations to be used in the report
+
+\newpage
+## Work Plan
+
+A work plan illustrated in figure \@ref(fig:workplan) itemized the task to be performed and specify the time when each task should begin and end. The activity are grouped into three parts---collate, data tools and analysis and reporting. 
+
+```{r workplan, fig.width=8, fig.height=4, fig.cap="Workplan for the task specify the begining and ending date of each activity"}
+wk = readxl::read_excel("workplan.xlsx")
+
+wk = wk %>% 
+  pivot_longer(cols = begin:end, names_to = "period", values_to = "date") %>% 
+  mutate(date = lubridate::dmy(date), activity = as.factor(activity)) 
+
+activity = wk %>% 
+  arrange(date)%>% 
+  distinct(activity)  %>% 
+  pull(activity) 
+
+
+wk %>% 
+  ggplot(aes(x = date, y = activity, color = group))+
+  geom_line(size = 5)+
+  scale_x_date(date_breaks = "1 week", 
+               labels = scales::label_date_short(), expand = c(0,0))+
+  ggsci::scale_color_jama()+
+  ggthemes::theme_fivethirtyeight()+
+  theme(legend.title = element_blank(), panel.grid.minor = element_blank(), 
+        panel.grid.major.y = element_blank(), axis.title = element_blank(), 
+        axis.text = element_text(size = 11), panel.grid = element_line(linetype = 3, color = 1),
+        legend.position = "top") +
+  scale_y_discrete(limits = activity %>% rev())
+
+
+```
+
+### Assignment Design
+
+The approach that this assignment will use is presented in conceptual diagram presented in figure \@ref(fig:database). The diagram is a bit complex, however, it provide a glimpse of key tasks that will be undertaken. Basically, the diagram represent key working areas. The first is to identify researchers and non-researchers at Tanzania Fisheries Research Institute (TAFIRI) from its five strategic research centers that have worked on engaged in researches in marine ecosystems. Once the researchers are identified, their publication and citation information will be retrieved from publication indexes, which will be supplemented with questionnaire. The information will later stored in the database, what will be created using Microsoft Access. 
+
+```{r database, fig.cap="Detailed workflow for creating publication and citation database from TAFIRI"}
+knitr::include_graphics("DbaseWorkflow.pdf")
+```
+
+### Google Forms
+Authors whose publications and reports were conducted in the coastal and marine waters will be considered extracted for collecting information of their perception on scienfific findings in support of decision making and legal formulation. Researchers that will be identified based on their researches conducted in the Indian Ocean will be selected for interview. To facilitate easy collection of opinions, Google Form will be used as a tool for online data collection [@googleform]. 
+
+The tool has capability to store collected information in a tidy format, which conform to the universal standard of wildely used database and popular statistical software. The form will be designed and the questions that seek to address the questions will be specified. The form that will be used can be found onlne at  [THIS](https://docs.google.com/forms/d/e/1FAIpQLSfMyYe60doFb950d6otQEXpSjNk1588BZDWDY_xyjOLM6ZaNA/viewform?usp=pp_url) link. A copy of the questionnaire is attached as an appendix at the end of this document. 
+
+
+
+<!-- Some of the questions that will be included in the Google Form include:  -->
+
+<!-- 1. How does the legal mandate establishing these institutions articulate the policy dimension of their work? -->
+<!-- 1.  How and by whom are the priority research agenda of TAFIRI defined? Where and by whom are the research questions generated? -->
+<!-- 1.  What are the main sources of technical and scientific information that decision-makers in the Department and Ministry use to make their decisions? -->
+<!-- 1.  In governments with a dedicated research institution such as TAFIRI and KMFRI, is there a framework at the Department or Ministerial level for integrating research results into management and decision-making processes? Are there structures that aim to bring the research objectives of scientists closer to the needs of policy-makers? -->
+<!-- 1.  Select key national/regional policies/legislation/strategies and review the process of their development; -->
+<!-- 1.  Assess whether and how the Department and the Ministry have interacted with TAFIRI and KMFRI, particularly in relation to the development of policies/legislation/strategies. What is the nature of engagement? (regular, occasional, serendipitous). Is it effective? -->
+<!-- 1.  Review and identify different mechanisms used by research institutions in linking science and management, particularly to ensure that research results with management significance are effectively transmitted to management authorities and requisite follow up actions are carried out. To what extent do scientists or science managers consider this to be an important outcome of research? What factors influence this? -->
+<!-- 1.  Highlight barriers to effective linkages between the scientific and policy-making/ management communities; -->
+<!-- 1.  Suggest mechanisms/factors that can improve the use of scientific information for decision making; -->
+<!-- 1.  Identify the capacity building needs in resource management authorities and agencies that, if addressed, may help to bridge the gap between science and management processes; -->
+<!-- 1.  Identify capacity building strategies for overcoming the barriers to effective integration of science into decision-making/management processes. -->
+
+
+
+<!-- ## Retrieve Publications -->
+<!-- The publication records of individual staff from TAFIRI will be extracted from Google Scholar. The record contains information of publication include the title, author list, page number, citation number publication year, journal -->
+
+
+## Publication types
+
+Different different types of scholarly literature exist. First publications will be identified on whether are original research (categorized as primary literature) or review research that based on other published work (secondary literature).  We will seek information from the following publications
+
+1. **Original research**: These are detailed studies reporting original research and are classified as primary literature. They include hypothesis, background study, methods, results, interpretation of findings, and a discussion of possible implications. Original research articles are long, with the word limit ranging from 3000 to 6000,2,3 and can even go up to 12,000 words for some journals.
+
+1. **Review articles** provide a critical and constructive analysis of existing published literature in a field, through summary, analysis, and comparison, often identifying specific gaps or problems and providing recommendations for future research. These are considered as secondary literature since they generally do not present new data from the author's experimental work. 
+
+
+1. **A scientific report** describes the process, progress, and or results of technical or scientific research or the state of a technical or scientific research problem.
+
+Original articles and scientific report will be further categorized into either applied or basic research. An *applied research* are those that had  created practical solutions for specific problems in fisheries while *basic* one are those publications that that sought to expand or advance knowledge in fisheries and related fields.
+
+
+### Harvest Publications from Citation Indexes
+
+Several citation indexes exist that provide unprecedented access to the content found in research databases. This service benefits students, researchers, practitioners, educators, historians, policymakers, publishers, and more by enabling users to identify trends and patterns in research, chart a researcher's career, find the history of a particular intervention or methodology, aid in literature review, or answer other detailed research questions.
+
+Many indexes allow this by way of an application programming interface (API) that allows uses to query the database and retrieve data programmatically [@apa]. Through this service, people can request custom sets of bibliographic/citation metadata and abstracts. While not all indexes support this use case, Google Scholar offers the service free of charge to anyone with an Internet connection. Other citation indexes like the Web of Science is only available to those academics whose institutions are able and willing to bear the (quite substantial) subscription costs of the Web of Science and other databases [@harzing2008google].
+
+
+<!-- Some of the major citation indexes that we are going to use to retrieve publication information from TAFIRI's staffs and affiliated institutions include; -->
+
+<!-- 1. **Google Scholar**--- a freely accessible web search engine that indexes the full text or metadata of scholarly literature across an array of publishing formats and disciplines [@scholar]. -->
+<!-- 1. **Scopus**---is an Elsevier is an nternational multi-disciplinary indexing & abstracting database for scientific, medical, technical, and social sciences. -->
+<!-- 1. **Web of Science (Clarivate)** provides a Core Collection of multidisciplinary indexes, which permit searching for articles that cite a known author or work. -->
+
+
+As @scholar indicates free access to data provided by [Google Scholar](https://scholar.google.com/) provides an avenue for more transparency in tenure reviews, funding and other science policy issues, as it allows citation counts, and analyses based thereon, to be performed and duplicated by anyone. We will use [Google scholar](https://scholar.google.com/) web search engine to retrieve text or metadata of scholarly literature across an array of publishing formats and disciplines [@scholar]. We will focus on two key aspects to obtain the text content of publication and citation, which are;
+
++ **Pull publications**---Gets the publications for a specified author. Google uses two id codes to uniquely reference a publication. The results of this method includes `cid` which can be used to link to a publication's full citation history (i.e. if you click on the number of citations in the main scholar profile page), and `pubid` which links to the details of the publication (i.e. if you click on the title of the publication in the main scholar profile page.)
++ **Pull citation**---Gets the number of citations to a scholar's articles over the past nine years.
+
+Figure \@ref(fig:poj) represent an except of publications and citation information that Prof. POJ Bwathondi published in various journal and books.
+
+
+```{r poj, fig.cap="Examplelry of Retrieved Publication information of POJ Bwathondi"}
+knitr::include_graphics("bwathondi_publications.png")
+```
+
+### Extract Publication Metadata
+
+In each publication,  key metadata information will be extracted. These information will include the *author(s)*, *title of publication*, *year of publication*, *type of publication*, *publisher*, *keywords*, and  an *abstract*. Since the common approach to extracting publication metadata by selecting publications does not work because TAFIRI lack publication database with sufficient coverage, criteria will be established for the extraction of information of the key publication metadata. This will be achieved by accessing peer reviewed and scientific reports, and by reading abstract section of the publications. 
+
+
+
+### Publications database
+
+Once we have retrieved the citation and publication information of all the publication from TAFIRI, we will then store them in Microsoft Access Database. We will create a dedicated database to store these information because because commercial databases such as the Web of Science (WoS) or Scopus do not sufficiently cover the literature of the topic in question. In this regard,  building such a database, which ideally should contain all TAFIRI publications since it was established. The information in the database will later used to analyze link of TAFIRI research findings in support for decision making and policy formulation. Therefore, our dedicated database must include the publications’ references and full texts. 
+
+### Software and Tools
+
+
+We will visit TAFIRI website and personal blogs of all identified researchers to text mine publications into tidy format data frame. We will also conduct a search in Google Scholar [@scholar] and Scopus [@bensman2011anne] to supplement publications and citations. For researchers whose publications are not included in the Google Scholar or Scopus or their wepbages like blogs,  we will collate their information through questionnaire survey. We will use a combination of software and tools during this work. The first software is open-source programming language R [@r] because has gained a central place in the text mining over the last decade, driven by the availability of diverse data scraping packages that allows to extract citation and publications from webpages [@scholar]. The second tool is Google Forms [@herlina2019need], which will be used to create online questionnaire and collect information. The third software is Microsoft Access and Excel spreadsheet for organizing and store data.  Data preparations, analysis and plotting results and writing of detailed methodology will be carried out in R language [@r].
+
+
+
+<!-- \newpage -->
+# Period and Performance of Deliverables
+
+Table \@ref(tab:tab1) highlight a period of each task and the specified deadline to deliver the products.
+
+```{r tab1}
+
+timeline = read_csv("timeline2.csv")
+
+timeline %>% 
+  select(-Date) %>% 
+  kableExtra::kable(format = "latex",caption = "Date for Exptected Deliverables", booktab = TRUE, col.names = "Date and Expected deliverable")%>% 
+  kableExtra::column_spec(column = 1, width = "15cm") %>%
+  kableExtra::pack_rows(group_label = "October 30, 2021", start_row = 1,end_row = 1, latex_wrap_text = TRUE, latex_gap_space = "2em")%>% 
+  kableExtra::pack_rows(group_label = "November 30, 2021", start_row = 2,end_row = 6, latex_gap_space = "2em")%>% 
+  kableExtra::pack_rows(group_label = "January 15, 2022", start_row = 7,end_row = 7, latex_gap_space = "2em") %>% 
+  kableExtra::kable_styling(latex_options = c("HOLD_position", "striped"), stripe_index = 1:7)
+```
+
+<!-- \newpage -->
+<!-- # Peer Reviewed Articles -->
+<!-- ```{r} -->
+<!-- readxl::read_excel("processedData/publications_revised.xlsx", sheet = 2) -->
+<!-- ``` -->
+
+
+\newpage
+
+## References {-}
+
+
+

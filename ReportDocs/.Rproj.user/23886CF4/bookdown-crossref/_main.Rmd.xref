@@ -1,0 +1,15 @@
+h1:header-includes header-includes:
+h1:times-new-roman -  #Times New Roman
+h1:section 
+h1:section-1 
+h1:geometry-left2.5cm-right2cm-top2cm-bottom2.5cm # geometry: 
+h1:fontsize-12pt fontsize: 12pt
+h1:introduction Introduction
+h1:method METHOD
+h2:study-area Study Area
+fig:pfz-map Satellite derived Potential fishing zones in the territorial and exclusive economic zone of Tanzania
+h1:paper-2 Paper 2
+h1:paper-3 Paper 3
+h1:conclusions Conclusions
+h1:references REFERENCES
+

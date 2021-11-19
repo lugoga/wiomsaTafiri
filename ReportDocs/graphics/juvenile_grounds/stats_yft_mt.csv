@@ -1,0 +1,6 @@
+region,species,fishing_ground,counts,statistic,p.value,season
+Tanga,Bigeye,Vyulu,24,NA,NA,NE
+Tanga,Bigeye,Nyuli,6,NA,NA,NE
+Tanga,Bigeye,Majomvi,11,NA,NA,NE
+Tanga,Bigeye,Msanga,4,4,0.04550026389635847,SE
+Tanga,Bigeye,Majomvi,28,2.2857142857142856,0.13057001811573743,SE

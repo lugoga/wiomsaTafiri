@@ -1,0 +1,15 @@
+h1:output output:
+h1:bookdownpdf_book bookdown::pdf_book:
+h1:toc-no # toc: no
+h1:template-null template: null
+h1:includes includes:
+h1:in_header-texyihuipreamble.tex in_header: texyihui/preamble.tex
+h1:before_body-texyihuibefore_body.tex before_body: texyihui/before_body.tex
+h1:url-your-book-url-like-httpsbookdown.orgyihuibookdown url: your book url like https://bookdown.org/yihui/bookdown
+h1:geometry-left2.5cm-right2cm-top2cm-bottom2.5cm geometry: 
+h2:polishing polishing
+h1:forword Forword
+h1:executive-summary Executive Summary
+h1:acknowledgement Acknowledgement
+h1:list-of-abbreviation List of Abbreviation
+

@@ -1,0 +1,39 @@
+--- 
+bibliography: ref.bib
+output:
+  bookdown::pdf_book:
+    toc: no
+    template: null
+    includes:
+      in_header: tex/preamble.tex
+      before_body: tex/doc_preface.tex
+documentclass: book
+classoption: oneside
+papersize: a4
+fontsize: 12pt
+linestretch: 1.2
+subparagraph: yes
+link-citations: yes
+biblio-style: apalike
+
+# header-includes:
+#   - \usepackage{fontspec}
+#   - \usepackage{float}
+#   - \setmainfont{Adobe Caslon Pro} #Times New Roman
+#   - \usepackage[none]{hyphenat}
+#   
+# 
+# # geometry: "left=2.5cm, right=2cm, top=2cm, bottom=2.5cm"
+# fontsize: 12pt
+
+---
+
+# Introduction
+
+The fisheries sector has an important role to contribute towards the national foreign exchange earnings, nutrition and livelihood of communities, many of whom depend almost entirely on fishing related activities [@kadagi2021challenges]. Tanzania has an Exclusive Economic Zone (EEZ) of about 223,000 km^2^ [@easternResources] and territorial waters of about 64,000 km^2^ [@richmond1995field]. These areas provide potential grounds for fishing of tuna and tuna-like species and other marine living resources. 
+
+According to @majkowski, tuna is among the most traded and consumed seafood and because of high palatability/delicacy, these species have high demand globally. Tuna comprise a number of economically important species, including yellowfin tuna (*Thunnus albacares*), skipjack tuna (*Katsuwonus pelamis*), bigeye tuna (*Thunnus obesus*), and albacore tuna (*Thunnus alalunga*) [@igulu]. Billfishes includes swordfish (*Xiphias gladius*) and striped marlin (*Tetrapturus audax*) [@wekesa]. These resources may contribute towards the nation’s economic growth and food security when are exploited in sustainable manner. 
+
+Tuna and tuna-like species in the Western Indian Ocean is managed by the Indian Ocean Tuna Commission (IOTC) [@hallier]. The objective of the Commission is to ensure, through appropriate management, the conservation and optimum utilization of stocks covered [@ceo2012performance]. The IOTC can be considered the most important fisheries management organization for tuna and tuna-like species in the WIO region including Tanzania. Tanzania as a member of IOTC is obliged to collect data and provide scientific information to support regional stock assessment of relevant tuna and tuna like species. This mandate, led to establishment of the Deep Sea Fishing Authority (DSFA) in 2010 to manage, coordinate, and develop of tuna fisheries within the URT [@dsfa]. 
+
+Fisheries in Tanzania comprise of two categories: small-scale and industrial fisheries. Small scale fisheries operate in territorial waters of less than 200 meter deep. The small-scale fishers use a reasonable amount of capital but with traditional involvement [@tfa].  The common types of vessels used include; dugout canoes, ngalawa, dhows, mashua, planked canoes, catamarans, and axillary boats (dingy). These vessels often use shark nets, gill nets, purse seines/ surrounding nets, long lines, hand lines, cast nets, lift-nets, scoop nets, traps/baskets and ring nets [@tfa]. The Industrial fishing is the second category that operates in the EEZ (Figure \@ref(fig:pfz-map)). Industrial EEZ fisheries are exploited mostly by Distant Water Fishing Nations (DWFN) vessels under a license agreement with DSFA [@dsfa]. The two widely used fishing gears in the EEZ includes large-scale longlines and purseseines, while pole and line methods are used for research.  

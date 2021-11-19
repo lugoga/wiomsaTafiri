@@ -1,0 +1,27 @@
+bookdown::gitbook:
+  toc_depth: 3
+  css: style.css
+  config:
+    toc:
+      before: |
+        <li><a href="./">Research findings for sustainable fisheries resources</a></li>
+      after: |
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    edit: https://github.com/USERNAME/REPO/edit/BRANCH/%s
+    download: ["pdf", "epub"]
+bookdown::pdf_book:
+  template: null
+  includes:
+      in_header: texyihui/preamble.tex
+      before_body: texyihui/before_body.tex
+      after_body: texyihui/after_body.tex
+  latex_engine: xelatex
+  
+      # in_header: tex/preamble.tex
+      # before_body: tex/doc_preface.tex
+      toc_depth: 3
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: yes
+bookdown::epub_book: default
+
